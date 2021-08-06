@@ -1,10 +1,7 @@
 <template>
   <div>
     <ul>
-      <li
-        v-for="color of colors"
-        :key="color"
-      >
+      <li v-for="color of colors" :key="color">
         <component
           :is="`icon-${color}`"
           @click="$colorMode.preference = color"
@@ -16,38 +13,39 @@
 </template>
 
 <script>
-import IconSystem from '@/assets/images/system.svg?inline'
-import IconLight from '@/assets/images/light.svg?inline'
-import IconDark from '@/assets/images/dark.svg?inline'
+import IconSystem from "@/assets/images/system.svg?inline";
+import IconLight from "@/assets/images/light.svg?inline";
+import IconDark from "@/assets/images/dark.svg?inline";
 
 export default {
   data() {
     return {
-      colors: ['system', 'light', 'dark']
-    }
+      colors: ["system", "light", "dark"],
+    };
   },
   components: {
     IconSystem,
     IconLight,
-    IconDark
+    IconDark,
   },
   methods: {
-    getClasses (color) {
+    getClasses(color) {
       if (this.$colorMode.unknown) {
-        return {}
+        return {};
       }
       return {
         preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value
-      }
-    }
-  }
-}
+        selected: color === this.$colorMode.value,
+      };
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
 ul {
   display: flex;
+  margin-right: 10px;
 }
 
 li {
@@ -57,18 +55,18 @@ li {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
-  &:nth-child(1){
+  &:nth-child(1) {
     visibility: hidden;
   }
 
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-right: 10px;
   }
 
   &:hover {
-    box-shadow: 0 0 15px var(--box-shadow);
+    box-shadow: 0 0 15px #d3d6db;
     transform: scale(1.1);
   }
 }

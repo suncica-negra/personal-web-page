@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
+      { rel: 'icon', type: 'image/png', href: '/small-icon.png' }
     ]
   },
 
@@ -36,6 +36,32 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ['@nuxtjs/i18n', {
+      locales: [
+        {
+          name: 'Hrvatski',
+          code: 'hr',
+          iso: 'hr-HR',
+          file: 'hr'
+        },
+        {
+          name: 'English',
+          code: 'en',
+          iso: 'en-US',
+          file: 'en'
+        },
+      ],
+      lazy: true,
+      langDir: 'locales/',
+      defaultLocale: 'hr',
+      parsePages: false,
+      pages: {
+        about: {
+          hr: '/o-meni',
+          en: '/about'
+        }
+      }
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

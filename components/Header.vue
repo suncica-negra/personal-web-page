@@ -1,18 +1,22 @@
 <template>
   <div class="header-wrapper">
-    This is header
-    <ColorModePicker />
+    <span>
+      <ColorModePicker />
+      <LangSwitcher />
+    </span>
   </div>
 </template>
 
 <script>
-import ColorModePicker from "@/components/ColorModePicker"
+import ColorModePicker from "@/components/ColorModePicker";
+import LangSwitcher from "./LangSwitcher.vue";
 
 export default {
   components: {
-    ColorModePicker
-  }
-}
+    ColorModePicker,
+    LangSwitcher,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -20,5 +24,13 @@ export default {
   display: flex;
   padding: 20px 50px;
   justify-content: space-between;
+  background-color: #091a28;
+  box-shadow: 0 0 15px var(--box-shadow);
+
+  span {
+    display: flex;
+    align-items: center;
+  }
 }
+
 </style>
