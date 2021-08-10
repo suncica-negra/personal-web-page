@@ -1,12 +1,18 @@
 <template>
   <div class="header-wrapper">
     <span>
-      <nuxt-link class="btn btn-4 logo" to="/">
+      <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
         <span><img class="me" src="@/assets/images/me.jpg" /></span>
       </nuxt-link>
-      <nuxt-link class="btn btn-4 text" to="/"> {{ $t("general.header.about") }} </nuxt-link>
-      <nuxt-link class="btn btn-4 text" to="/"> {{ $t("general.header.projects") }} </nuxt-link>
-      <nuxt-link class="btn btn-4 text" to="/"> {{ $t("general.header.contact") }} </nuxt-link>
+      <nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
+        {{ $t("general.header.about") }}
+      </nuxt-link>
+      <nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
+        {{ $t("general.header.projects") }}
+      </nuxt-link>
+      <nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
+        {{ $t("general.header.contact") }}
+      </nuxt-link>
     </span>
     <span>
       <ColorModePicker />
@@ -78,7 +84,10 @@ export default {
       &.text {
         box-shadow: unset;
         transform: unset;
-        color: #09aeba;
+        background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+        background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
 
