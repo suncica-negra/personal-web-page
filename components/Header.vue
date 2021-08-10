@@ -74,6 +74,13 @@ export default {
       padding: 20px;
       margin-right: 20px;
       letter-spacing: 1.7px;
+
+      &.nuxt-link-exact-active {
+        background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+        background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
 
     &:hover {
