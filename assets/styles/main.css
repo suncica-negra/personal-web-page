@@ -3,9 +3,11 @@
   --color-primary: #158876;
   --color-secondary: #0e2233;
   --bg: #f3f5f4;
+  --bg-reverse: #091a28;
   --bg-secondary: #fff;
   --border-color: #ddd;
   --box-shadow: #4e4e4e;
+  --box-shadow-rewerse: #d3d6db;
   --green: #09aeba;
 }
 
@@ -14,13 +16,14 @@
   --color-primary: #41b38a;
   --color-secondary: #fdf9f3;
   --bg: #091a28;
+  --bg-reverse: #f3f5f4;
   --bg-secondary: #071521;
   --border-color: #0d2538;
   --box-shadow: #d3d6db;
+  --box-shadow-rewerse: #4e4e4e;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Chakra+Petch:wght@300;400;500;600;700&family=Goldman:wght@400;700&family=Jura:wght@300;400;500;700&family=Play:wght@400;700&family=Rajdhani:wght@300;400;500;700&family=Righteous&family=Source+Code+Pro:wght@200;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Tomorrow:wght@100;300;400;500;700&family=Varela+Round&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Chakra+Petch:wght@300;400;500;600;700&family=Goldman:wght@400;700&family=Jura:wght@300;400;500;700&family=Play:wght@400;700&family=Rajdhani:wght@300;400;500;700&family=Righteous&family=Source+Code+Pro:wght@200;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Tomorrow:wght@100;300;400;500;700&family=Varela+Round&display=swap");
 
 /* font-family: 'Bungee Hairline', cursive;
 font-family: 'Chakra Petch', sans-serif;
@@ -42,10 +45,31 @@ body {
   color: var(--color);
   transition: background-color 0.3s;
   line-height: 1;
+  min-height: 1000px;
 }
 
 a {
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 1023px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
 }
 
 html,
@@ -135,7 +159,7 @@ video {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 /* HTML5 display-role reset for older browsers */
