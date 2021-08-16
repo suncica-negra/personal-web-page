@@ -53,6 +53,12 @@
           </nuxt-link>
         </div>
       </transition>
+      <transition enter-active-class="slide-left">
+        <div v-if="dropdown" class="color-lang">
+          <ColorModePicker />
+          <LangSwitcher />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -357,8 +363,66 @@ export default {
   }
 }
 
-html.dark-mode .btn.btn-4.text:after {
+html.dark-mode .mobile-only .btn.btn-4.text:after {
   opacity: 0.1;
   background: #000;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s
+    both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(140px);
+    transform: translateX(140px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(140px);
+    transform: translateX(140px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.color-lang {
+  position: fixed;
+  bottom: 72px;
+  right: 127px;
+  z-index: 1;
+
+  .lang-switcher-wrapper,
+  ul {
+    display: unset;
+
+    .cro {
+      margin-bottom: 18px;
+    }
+
+    li:nth-child(2) {
+      margin-bottom: 18px;
+    }
+
+    li:hover,
+    a:hover .cro,
+    .locale-link:hover svg {
+      box-shadow: 0 0 15px var(--box-shadow-rewerse);
+    }
+  }
 }
 </style>
