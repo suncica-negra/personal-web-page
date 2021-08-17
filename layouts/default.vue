@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Nuxt />
+    <Nuxt id="body" />
     <Footer />
     <client-only>
       <NoCookie />
@@ -22,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+#body {
+  min-height: calc(100vh - 110px - 54px - 19px);
+}
+</style>
