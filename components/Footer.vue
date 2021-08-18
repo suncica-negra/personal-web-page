@@ -80,7 +80,7 @@ export default {};
 <style lang="scss">
 #footer {
   width: 100%;
-  box-shadow: 0 0 7px var(--box-shadow);
+  box-shadow: 0 0 7px var(--box-shadow-transparent);
 
   .footer {
     display: flex;

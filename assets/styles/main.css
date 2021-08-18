@@ -13,6 +13,7 @@
   --green: #09aeba;
   --footer-svg: #ababab;
   --copy: #919090;
+  --box-shadow-transparent: rgba(78, 78, 78, 0.3);
 }
 
 .dark-mode {
@@ -27,6 +28,7 @@
   --box-shadow-rewerse: #4e4e4e;
   --footer-svg: #000000;
   --copy: #404040;
+  --box-shadow-transparent: rgba(211, 214, 219, 0.3);
 }
 
 /* font-family: 'Bungee Hairline', cursive;
