@@ -2,10 +2,11 @@
   <div>
     <Header />
     <Nuxt id="body" />
-    <Footer />
     <client-only>
       <NoCookie />
     </client-only>
+    <Footer />
+    
   </div>
 </template>
 
@@ -25,6 +26,6 @@ export default {
 
 <style lang="scss">
 #body {
-  min-height: calc(100vh - 110px - 54px - 19px);
+  min-height: calc(100vh - 251px);
 }
 </style>

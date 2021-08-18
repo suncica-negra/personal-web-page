@@ -69,6 +69,7 @@
         </svg>
       </a>
     </div>
+    <div class="copy">&copy; {{ new Date().getFullYear() }}.</div>
   </div>
 </template>
 
@@ -79,7 +80,7 @@ export default {};
 <style lang="scss">
 #footer {
   width: 100%;
-  border-top: 1px solid var(--footer-svg);
+  box-shadow: 0 0 7px var(--box-shadow);
 
   .footer {
     display: flex;
@@ -107,6 +108,33 @@ export default {};
         transition: all 0.3s;
       }
     }
+
+    a:hover {
+      animation: pulse 1s infinite;
+      transition: 0.3s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      70% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .copy {
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 13px;
+    padding-bottom: 20px;
+    color: var(--copy);
   }
 }
 </style>
