@@ -1,25 +1,27 @@
 <template>
   <div>
     <div class="desktop-only">
-      <div class="header-wrapper">
-        <span>
-          <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
-            <span><img class="me" src="@/assets/images/me.jpg" /></span>
-          </nuxt-link>
-          <nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
-            {{ $t("general.header.about") }}
-          </nuxt-link>
-          <nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
-            {{ $t("general.header.projects") }}
-          </nuxt-link>
-          <nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
-            {{ $t("general.header.contact") }}
-          </nuxt-link>
-        </span>
-        <span>
-          <ColorModePicker />
-          <LangSwitcher />
-        </span>
+      <div class="header-holder">
+        <div class="header-wrapper">
+          <span>
+            <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
+              <span><img class="me" src="@/assets/images/me.jpg" /></span>
+            </nuxt-link>
+            <nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
+              {{ $t("general.header.about") }}
+            </nuxt-link>
+            <nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
+              {{ $t("general.header.projects") }}
+            </nuxt-link>
+            <nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
+              {{ $t("general.header.contact") }}
+            </nuxt-link>
+          </span>
+          <span>
+            <ColorModePicker />
+            <LangSwitcher />
+          </span>
+        </div>
       </div>
     </div>
     <div class="mobile-only">
@@ -86,16 +88,22 @@ export default {
 </script>
 
 <style lang="scss">
-.header-wrapper {
-  display: flex;
-  padding: 20px 50px;
-  justify-content: space-between;
+.header-holder {
+  width: 100%;
   background-color: #091a28;
   box-shadow: 0 0 15px var(--box-shadow);
 
-  span {
+  .header-wrapper {
     display: flex;
-    align-items: center;
+    padding: 20px 50px;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
