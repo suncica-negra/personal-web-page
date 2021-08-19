@@ -26,7 +26,7 @@
     </div>
     <div class="mobile-only">
       <div class="custom">
-        <input type="checkbox" @click="handleDropdown" />
+        <input id="input-burger" type="checkbox" @click="handleDropdown" />
         <span></span>
         <span></span>
         <span></span>
@@ -42,17 +42,25 @@
       >
         <div v-if="dropdown" class="dropdown-menu">
           <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
-            <span><img class="me" src="@/assets/images/me.jpg" /></span>
+            <span @click="closeDropdown"
+              ><img class="me" src="@/assets/images/me.jpg"
+            /></span>
           </nuxt-link>
-          <nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
-            {{ $t("general.header.about") }}
-          </nuxt-link>
-          <nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
-            {{ $t("general.header.projects") }}
-          </nuxt-link>
-          <nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
-            {{ $t("general.header.contact") }}
-          </nuxt-link>
+          <span @click="closeDropdown"
+            ><nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
+              {{ $t("general.header.about") }}
+            </nuxt-link></span
+          >
+          <span @click="closeDropdown"
+            ><nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
+              {{ $t("general.header.projects") }}
+            </nuxt-link></span
+          >
+          <span @click="closeDropdown"
+            ><nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
+              {{ $t("general.header.contact") }}
+            </nuxt-link></span
+          >
         </div>
       </transition>
       <transition enter-active-class="slide-left">
@@ -82,6 +90,9 @@ export default {
   methods: {
     handleDropdown() {
       this.dropdown = !this.dropdown;
+    },
+    closeDropdown() {
+      document.getElementById("input-burger").click();
     },
   },
 };
@@ -302,6 +313,11 @@ export default {
   a:hover {
     box-shadow: 0 0 15px var(--box-shadow-rewerse);
   }
+
+  span {
+    overflow: hidden;
+    display: inline-flex;
+  }
 }
 
 .slide-top {
@@ -431,6 +447,14 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
     .locale-link:hover svg {
       box-shadow: 0 0 15px var(--box-shadow-rewerse);
     }
+  }
+
+  .nuxt-link-exact-active.nuxt-link-active.active.locale-link img {
+    opacity: 1;
+  }
+
+  .locale-link img {
+    opacity: 0.4;
   }
 }
 </style>
