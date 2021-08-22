@@ -1,6 +1,32 @@
 <template>
   <div id="footer">
     <div class="footer">
+      <a href="mailto:orhidea.martinic@gmail.com">
+        <svg
+          version="1.1"
+          id="email"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 512 512"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+          width="40"
+          height="40"
+        >
+          <rect x="64" y="64" style="fill: #eceff1" width="384" height="384" />
+          <polygon
+            style="fill: #cfd8dc"
+            points="256,296.384 448,448 448,148.672 "
+          />
+          <path
+            style="fill: #f44336"
+            d="M464,64h-16L256,215.616L64,64H48C21.504,64,0,85.504,0,112v288c0,26.496,21.504,48,48,48h16V148.672
+          l192,147.68L448,148.64V448h16c26.496,0,48-21.504,48-48V112C512,85.504,490.496,64,464,64z"
+          />
+        </svg>
+      </a>
       <a href="https://github.com/suncica-negra">
         <svg
           viewBox="0 0 1024 998"
@@ -42,39 +68,15 @@
           />
         </svg>
       </a>
-      <a href="mailto:orhidea.martinic@gmail.com">
-        <svg
-          version="1.1"
-          id="email"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 512 512"
-          style="enable-background: new 0 0 512 512"
-          xml:space="preserve"
-          width="40"
-          height="40"
-        >
-          <rect x="64" y="64" style="fill: #eceff1" width="384" height="384" />
-          <polygon
-            style="fill: #cfd8dc"
-            points="256,296.384 448,448 448,148.672 "
-          />
-          <path
-            style="fill: #f44336"
-            d="M464,64h-16L256,215.616L64,64H48C21.504,64,0,85.504,0,112v288c0,26.496,21.504,48,48,48h16V148.672
-          l192,147.68L448,148.64V448h16c26.496,0,48-21.504,48-48V112C512,85.504,490.496,64,464,64z"
-          />
-        </svg>
-      </a>
     </div>
     <div class="copy">&copy; {{ new Date().getFullYear() }}.</div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Footer",
+};
 </script>
 
 <style lang="scss">
@@ -131,7 +133,7 @@ export default {};
 
   .copy {
     text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     font-size: 13px;
     padding-bottom: 20px;
     color: var(--copy);

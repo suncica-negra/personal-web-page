@@ -14,6 +14,9 @@
   --footer-svg: #ababab;
   --copy: #919090;
   --box-shadow-transparent: rgba(78, 78, 78, 0.3);
+  --cookie: #091a28;
+  --cookie-close: rgba(0, 0, 0, 0.1);
+  --cookie-close-border: rgba(0, 0, 0, 0.2);
 }
 
 .dark-mode {
@@ -29,6 +32,9 @@
   --footer-svg: #000000;
   --copy: #404040;
   --box-shadow-transparent: rgba(211, 214, 219, 0.3);
+  --cookie: #919090;
+  --cookie-close: rgba(255, 255, 255, 0.1);
+  --cookie-close-border: rgba(255, 255, 255, 0.2);
 }
 
 /* font-family: 'Bungee Hairline', cursive;
