@@ -18,6 +18,7 @@ import IconLight from "@/assets/images/light.svg?inline";
 import IconDark from "@/assets/images/dark.svg?inline";
 
 export default {
+  name: "ColorModePicker",
   data() {
     return {
       colors: ["system", "light", "dark"],

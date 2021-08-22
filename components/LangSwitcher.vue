@@ -23,6 +23,7 @@
 import EngLang from "./svg-image-templates/EngLang.vue";
 
 export default {
+  name: "LangSwitcher",
   components: {
     EngLang,
   },

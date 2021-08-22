@@ -78,6 +78,7 @@ import ColorModePicker from "@/components/ColorModePicker";
 import LangSwitcher from "./LangSwitcher.vue";
 
 export default {
+  name: "Header",
   components: {
     ColorModePicker,
     LangSwitcher,
@@ -146,6 +147,7 @@ export default {
     padding: 20px;
     margin-right: 20px;
     letter-spacing: 1.7px;
+    font-size: 16px;
 
     &.nuxt-link-exact-active {
       background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
@@ -453,8 +455,14 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
     opacity: 1;
   }
 
-  .locale-link img {
-    opacity: 0.4;
+  .locale-link {
+    img {
+      opacity: 0.4;
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
   }
 }
 </style>

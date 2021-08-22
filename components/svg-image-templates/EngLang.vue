@@ -284,3 +284,9 @@
 </svg
 >
 </template>
+
+<script>
+export default {
+  name: "EngLang",
+};
+</script>
