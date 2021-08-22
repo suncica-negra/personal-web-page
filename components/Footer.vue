@@ -95,19 +95,19 @@ export default {
     #github path,
     #linkedin path {
       fill: var(--footer-svg) !important;
-      transition: all 0.3s;
+      transition: all 0.5s;
     }
 
     #email {
       rect,
       polygon {
         fill: var(--bg) !important;
-        transition: all 0.3s;
+        transition: all 0.5s;
       }
 
       path {
         fill: var(--footer-svg) !important;
-        transition: all 0.3s;
+        transition: all 0.5s;
       }
     }
 

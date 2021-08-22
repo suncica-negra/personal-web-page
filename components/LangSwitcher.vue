@@ -57,7 +57,7 @@ export default {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
   }
 
   .cro {
@@ -68,7 +68,7 @@ export default {
 
 .locale-link {
   opacity: 0.4;
-  transition: 0.3s ease-out all;
+  transition: 0.5s ease-out all;
 }
 
 .nuxt-link-exact-active {

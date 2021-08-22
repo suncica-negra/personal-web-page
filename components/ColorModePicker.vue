@@ -56,7 +56,7 @@ li {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 
   &:nth-child(1) {
     visibility: hidden;
