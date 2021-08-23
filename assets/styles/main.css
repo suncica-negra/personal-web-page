@@ -17,6 +17,7 @@
   --cookie: #091a28;
   --cookie-close: rgba(0, 0, 0, 0.1);
   --cookie-close-border: rgba(0, 0, 0, 0.2);
+  --contact-icon: #000000;
 }
 
 .dark-mode {
@@ -35,6 +36,7 @@
   --cookie: #919090;
   --cookie-close: rgba(255, 255, 255, 0.1);
   --cookie-close-border: rgba(255, 255, 255, 0.2);
+  --contact-icon: #ababab;
 }
 
 /* font-family: 'Bungee Hairline', cursive;
@@ -66,7 +68,7 @@ body {
     "Helvetica Neue", sans-serif;
   background-color: var(--bg);
   color: var(--color);
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-in-out;
   line-height: 1;
   min-height: auto;
 }
@@ -221,4 +223,9 @@ q::after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 30px;
 }

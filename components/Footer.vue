@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div class="footer">
-      <a href="mailto:orhidea.martinic@gmail.com">
+      <a href="mailto:orhidea.martinic@gmail.com" target="_blank">
         <svg
           version="1.1"
           id="email"
@@ -27,7 +27,7 @@
           />
         </svg>
       </a>
-      <a href="https://github.com/suncica-negra">
+      <a href="https://github.com/suncica-negra" target="_blank">
         <svg
           viewBox="0 0 1024 998"
           aria-labelledby="github"
@@ -40,7 +40,7 @@
           ></path>
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/dea-k-331534187/">
+      <a href="https://www.linkedin.com/in/dea-k-331534187/" target="_blank">
         <svg
           version="1.1"
           id="linkedin"

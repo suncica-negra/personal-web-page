@@ -14,5 +14,11 @@ module.exports = {
         partSix: "i anonimnost!",
         partSeven: "Ukoliko želite kolačiće,",
         partEight: "morate ih peći sami."
+    },
+    contact: {
+        title: "Pogledajte kod, pošaljite mi email i povežimo se putem društvene mreže!",
+        email: "Pošalji mail",
+        github: "Pogledaj kod",
+        linkedin: "Poveži se"
     }
 }

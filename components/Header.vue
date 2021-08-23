@@ -153,6 +153,7 @@ export default {
       background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
       background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
@@ -168,6 +169,7 @@ export default {
       background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
       background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
@@ -307,6 +309,7 @@ export default {
     background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
     background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 18px;
