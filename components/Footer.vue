@@ -95,25 +95,25 @@ export default {
     #github path,
     #linkedin path {
       fill: var(--footer-svg) !important;
-      transition: all 0.5s;
+      transition: all 0.5s ease-in-out;
     }
 
     #email {
       rect,
       polygon {
         fill: var(--bg) !important;
-        transition: all 0.5s;
+        transition: all 0.5s ease-in-out;
       }
 
       path {
         fill: var(--footer-svg) !important;
-        transition: all 0.5s;
+        transition: all 0.5s ease-in-out;
       }
     }
 
     a:hover {
       animation: pulse 1s infinite;
-      transition: 0.3s;
+      transition: 0.3s ease-in-out;
     }
 
     @keyframes pulse {

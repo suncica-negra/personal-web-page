@@ -132,7 +132,7 @@ export default {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 
   &.logo {
     margin-right: 20px;
@@ -264,7 +264,7 @@ export default {
 
   #menu {
     position: absolute;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
   }
 
   #menu a {
@@ -285,7 +285,7 @@ export default {
     bottom: -8px;
     right: -41px;
     width: 47px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 
     &.active {
       transform: scale(14);

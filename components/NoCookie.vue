@@ -243,7 +243,7 @@ export default {
 
       .btn-two {
         color: var(--cookie);
-        transition: all 0.5s;
+        transition: all 0.5s ease-in-out;
         position: relative;
       }
 
@@ -267,7 +267,7 @@ export default {
         width: 100%;
         height: 100%;
         z-index: 1;
-        transition: all 0.5s;
+        transition: all 0.5s ease-in-out;
         border-radius: 10px;
       }
 
