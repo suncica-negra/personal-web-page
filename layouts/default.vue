@@ -29,5 +29,13 @@ export default {
   padding: 50px 30px;
   max-width: 1920px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1023px) {
+    min-height: calc(100vh - 221px);
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 50px 15px;
+  }
 }
 </style>
