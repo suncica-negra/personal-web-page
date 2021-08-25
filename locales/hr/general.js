@@ -20,5 +20,9 @@ module.exports = {
         email: "Pošalji mail",
         github: "Pogledaj kod",
         linkedin: "Poveži se"
+    },
+    projects: {
+        tabOne: "Profesionalni projekti",
+        tabTwo: "Privatni projekti"
     }
 }

@@ -3,24 +3,30 @@
     <h1>Projekti</h1>
     <div class="projects-holder">
       <div class="projects-menu-wrapper">
-        <div
-          class="profesional"
-          :class="{ active: active == 1 }"
-          @click="toggleActive(1)"
-        >
-          <p>Profesionalni projekti</p>
-        </div>
-        <div
-          class="private"
-          :class="{ active: active == 2 }"
-          @click="toggleActive(2)"
-        >
-          <p>Privatni projekti</p>
+        <div class="sticky">
+          <div
+            class="profesional"
+            :class="{ active: active == 1 }"
+            @click="toggleActive(1)"
+          >
+            <p>{{ $t("general.projects.tabOne") }}</p>
+          </div>
+          <div
+            class="private"
+            :class="{ active: active == 2 }"
+            @click="toggleActive(2)"
+          >
+            <p>{{ $t("general.projects.tabTwo") }}</p>
+          </div>
         </div>
       </div>
       <div class="tabs">
-        <div v-if="active == 1" class="tab">Prvi tab</div>
-        <div v-if="active == 2" class="tab">Drugi tab</div>
+        <div v-if="active == 1" class="tab">
+          <div>Prvi tab</div>
+        </div>
+        <div v-if="active == 2" class="tab">
+          <div>Drugi tab</div>
+        </div>
       </div>
     </div>
   </div>
@@ -52,19 +58,33 @@ export default {
     text-align: center;
     min-height: calc(100vh - 380px);
 
+    .sticky {
+      position: sticky;
+      overflow: auto;
+      height: 205px;
+      top: 15px;
+    }
+
     .profesional,
     .private {
-      height: 50%;
-      position: relative;
+      height: 100px;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
       box-shadow: inset -7px 0px 21px -8px var(--box-shadow-transparent),
         inset 16px 0px 12px -8px var(--box-shadow-transparent);
       transition: all 0.5s ease-in-out;
+      position: relative;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
 
       &.active {
         box-shadow: inset 11px 0px 12px -2px var(--box-shadow-transparent),
           inset 0px 0px 0px 0px var(--box-shadow-transparent);
+        opacity: 1;
       }
 
       & p {
@@ -82,7 +102,6 @@ export default {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        cursor: pointer;
       }
     }
   }
@@ -90,9 +109,14 @@ export default {
   .tabs {
     .tab {
       min-height: 100%;
-      -webkit-box-shadow: 7px 0px 11px -1px var(--box-shadow-transparent);
-      -moz-box-shadow: 7px 0px 11px -1px var(--box-shadow-transparent);
-      box-shadow: 7px 0px 11px -1px var(--box-shadow-transparent);
+      box-shadow: inset -7px 0 39px -7px var(--box-shadow-transparent);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+      div {
+        padding: 20px;
+      }
     }
   }
 }
@@ -103,10 +127,14 @@ export default {
     min-height: unset;
 
     .projects-menu-wrapper {
-      display: flex;
-      flex-direction: row;
       min-height: unset;
-      height: 75px;
+
+      .sticky {
+        display: flex;
+        flex-direction: row;
+        min-height: unset;
+        height: 75px;
+      }
 
       .profesional,
       .private {
@@ -129,9 +157,10 @@ export default {
 
     .tabs {
       .tab {
-        -webkit-box-shadow: 0px 6px 5px 1px var(--box-shadow-transparent);
-        -moz-box-shadow: 0px 6px 5px 1px var(--box-shadow-transparent);
-        box-shadow: 0px 6px 5px 1px var(--box-shadow-transparent);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        box-shadow: inset -4px -20px 39px -12px var(--box-shadow-transparent);
       }
     }
   }

@@ -20,5 +20,9 @@ module.exports = {
         email: "Send an email",
         github: "See code",
         linkedin: "Connect"
+    },
+    projects: {
+        tabOne: "Professional projects",
+        tabTwo: "Private projects"
     }
 }
