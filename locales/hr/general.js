@@ -17,7 +17,7 @@ module.exports = {
     },
     contact: {
         title: "Pogledajte kod, pošaljite mi email i povežimo se putem društvene mreže!",
-        email: "Pošalji mail",
+        gmail: "Pošalji mail",
         github: "Pogledaj kod",
         linkedin: "Poveži se"
     },

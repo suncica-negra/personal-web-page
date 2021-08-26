@@ -17,7 +17,7 @@ module.exports = {
     },
     contact: {
         title: "Take a look at the code, send me an email and let's connect via social media!",
-        email: "Send an email",
+        gmail: "Send an email",
         github: "See code",
         linkedin: "Connect"
     },
