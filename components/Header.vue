@@ -7,13 +7,22 @@
             <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
               <span><img class="me" src="@/assets/images/me.jpg" /></span>
             </nuxt-link>
-            <nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
+            <nuxt-link
+              class="btn btn-4 text"
+              :to="localePath('/o-meni')"
+            >
               {{ $t("general.header.about") }}
             </nuxt-link>
-            <nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
+            <nuxt-link
+              class="btn btn-4 text"
+              :to="localePath('/projekti')"
+            >
               {{ $t("general.header.projects") }}
             </nuxt-link>
-            <nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
+            <nuxt-link
+              class="btn btn-4 text"
+              :to="localePath('/kontakt')"
+            >
               {{ $t("general.header.contact") }}
             </nuxt-link>
           </span>
@@ -47,17 +56,26 @@
             /></span>
           </nuxt-link>
           <span @click="closeDropdown"
-            ><nuxt-link class="btn btn-4 text" :to="localePath('/o-meni')">
+            ><nuxt-link
+              class="btn btn-4 text golden-text-color"
+              :to="localePath('/o-meni')"
+            >
               {{ $t("general.header.about") }}
             </nuxt-link></span
           >
           <span @click="closeDropdown"
-            ><nuxt-link class="btn btn-4 text" :to="localePath('/projekti')">
+            ><nuxt-link
+              class="btn btn-4 text golden-text-color"
+              :to="localePath('/projekti')"
+            >
               {{ $t("general.header.projects") }}
             </nuxt-link></span
           >
           <span @click="closeDropdown"
-            ><nuxt-link class="btn btn-4 text" :to="localePath('/kontakt')">
+            ><nuxt-link
+              class="btn btn-4 text golden-text-color"
+              :to="localePath('/kontakt')"
+            >
               {{ $t("general.header.contact") }}
             </nuxt-link></span
           >
@@ -306,11 +324,6 @@ export default {
   a.btn.btn-4.text,
   a.btn.btn-4.logo {
     margin: 0;
-    background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
-    background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 18px;
   }

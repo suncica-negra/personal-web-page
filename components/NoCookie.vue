@@ -2,7 +2,7 @@
   <div class="cookie-wrapper">
     <transition leave-active-class="scale-out-bl">
       <div class="cookie" v-if="isOpen">
-        <span class="text"
+        <span class="text golden-text-color"
           >{{ $t("general.cookie.partOne") }} <br />{{
             $t("general.cookie.partTwo")
           }}
@@ -208,10 +208,6 @@ export default {
       bottom: 43px;
       left: 71px;
       font-family: "Chakra Petch", sans-serif;
-      background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
-      background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       font-weight: 700;
       font-size: 16px;
       z-index: 1;

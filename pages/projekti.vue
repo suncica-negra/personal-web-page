@@ -9,14 +9,14 @@
             :class="{ active: active == 1 }"
             @click="toggleActive(1)"
           >
-            <p>{{ $t("general.projects.tabOne") }}</p>
+            <p class="golden-text-color">{{ $t("general.projects.tabOne") }}</p>
           </div>
           <div
             class="private"
             :class="{ active: active == 2 }"
             @click="toggleActive(2)"
           >
-            <p>{{ $t("general.projects.tabTwo") }}</p>
+            <p class="golden-text-color">{{ $t("general.projects.tabTwo") }}</p>
           </div>
         </div>
       </div>
@@ -97,11 +97,6 @@ export default {
         font-family: "Chakra Petch", sans-serif;
         font-size: 20px;
         font-weight: 700;
-        background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
-        background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
       }
     }
   }

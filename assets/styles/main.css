@@ -53,7 +53,8 @@ font-family: 'Varela Round', sans-serif;
 font-family: 'Source Code Pro', monospace;
 font-family: 'Chakra Petch', sans-serif; */
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   background: #ababab;
   color: var(--border-color);
 }
@@ -95,6 +96,14 @@ a {
   .desktop-only {
     display: block;
   }
+}
+
+.golden-text-color {
+  background: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+  background: -webkit-linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 html,
@@ -226,6 +235,6 @@ table {
 }
 
 h1 {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 30px;
 }
