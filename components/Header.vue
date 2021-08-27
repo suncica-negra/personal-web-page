@@ -82,7 +82,7 @@
         </div>
       </transition>
       <transition enter-active-class="slide-left">
-        <div v-if="dropdown" class="color-lang">
+        <div v-if="dropdown" class="color-lang" @click="closeDropdown">
           <ColorModePicker />
           <LangSwitcher />
         </div>
