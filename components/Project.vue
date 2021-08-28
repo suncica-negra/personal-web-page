@@ -1,0 +1,239 @@
+<template>
+  <div class="private-projects">
+    <div :class="project.imageOrder" class="image-width">
+      <img
+        :src="require(`~/assets/images/${project.imageSrc}`)"
+        :alt="project.name"
+      />
+    </div>
+    <div :class="project.textOrder" class="text-width">
+      {{ project.text }}
+      <div class="dates">
+        <span class="material-icons-outlined">construction</span>
+        <p>{{ project.dates }}</p>
+      </div>
+      <div class="buttons-wrapper">
+        <a :href="`${project.code}`" target="_blank"
+          ><button class="glow-on-hover" type="button">
+            <code>{{ $t("general.projects.codeButton") }}</code>
+            <span class="material-icons-outlined">code</span>
+          </button></a
+        >
+        <a :href="`${project.web}`" target="_blank"
+          ><button class="glow-on-hover" type="button">
+            <code>{{ $t("general.projects.webButton") }}</code>
+            <span class="material-icons-outlined">web</span>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Project",
+  props: {
+    project: {
+      type: Object,
+      default: () => {},
+      required: true,
+    },
+  },
+};
+</script>
+
+<style lang="scss">
+.private-projects {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  transition: all 0.5s ease-in-out;
+  padding: 20px;
+
+  &:hover {
+    box-shadow: 0 0 15px var(--box-shadow-transparent);
+    border-radius: 10px;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+
+    a:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  .dates {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+
+    .material-icons-outlined {
+      font-family: "Material Icons";
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+    p {
+      font-family: "Chakra Petch", sans-serif;
+      letter-spacing: 3px;
+    }
+  }
+
+  .glow-on-hover {
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--bg);
+    color: #243746;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    transition: all 0.5s ease-in-out;
+
+    &:before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      border-radius: 10px;
+    }
+
+    &:active {
+      color: #000;
+    }
+
+    &:active:after {
+      background: transparent;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+
+    &:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #7b6542 0%, #d5c19c 45%);
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    .material-icons-outlined {
+      margin: 0 0 0 20px;
+      font-family: "Material Icons";
+      font-size: 30px;
+    }
+
+    code {
+      font-size: 16px;
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+
+    @keyframes glowing {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+  }
+
+  .text-width {
+    width: 60%;
+  }
+
+  .image-width {
+    width: 30%;
+  }
+
+  .first,
+  .second {
+    position: relative;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  img {
+    border-radius: 7px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .private-projects {
+    display: grid;
+
+    .text-width {
+      width: 100%;
+    }
+
+    .image-width {
+      width: 100%;
+    }
+
+    .second {
+      order: unset;
+    }
+
+    .first {
+      order: unset;
+    }
+
+    img {
+      width: 100%;
+      position: relative;
+      top: unset;
+      left: unset;
+      -ms-transform: unset;
+      transform: unset;
+      margin-bottom: 20px;
+    }
+  }
+}
+</style>

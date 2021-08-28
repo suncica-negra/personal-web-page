@@ -23,6 +23,9 @@ module.exports = {
     },
     projects: {
         tabOne: "Profesionalni projekti",
-        tabTwo: "Privatni projekti"
+        tabTwo: "Privatni projekti",
+        tabTwoTitle: "Dolje navedeni projekti rađeni su prije moje profesionalne karijere u ITu.",
+        codeButton: "Kod",
+        webButton: "Otvori"
     }
 }

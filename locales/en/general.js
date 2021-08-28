@@ -23,6 +23,9 @@ module.exports = {
     },
     projects: {
         tabOne: "Professional projects",
-        tabTwo: "Private projects"
+        tabTwo: "Private projects",
+        tabTwoTitle: "The projects listed below were done before my professional IT career.",
+        codeButton: "Code",
+        webButton: "Open"
     }
 }

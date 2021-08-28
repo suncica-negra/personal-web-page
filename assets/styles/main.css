@@ -76,6 +76,7 @@ body {
 
 a {
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1023px) {
