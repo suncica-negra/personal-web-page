@@ -24,7 +24,7 @@ module.exports = {
     projects: {
         tabOne: "Professional projects",
         tabTwo: "Private projects",
-        tabTwoTitle: "The projects listed below were done before my professional IT career.",
+        tabTwoTitle: "Listed below are projects I have done myself. They are presented in such a way that they are listed from the newest to the oldest. My first project is at the very bottom of the page, and the last one is just below this text.",
         codeButton: "Code",
         webButton: "Open"
     }

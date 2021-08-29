@@ -127,6 +127,9 @@ export default {
 
       .subtitle {
         padding: 20px;
+        font-family: "Goldman", cursive;
+        font-size: 20px;
+        line-height: 1.5;
       }
     }
   }

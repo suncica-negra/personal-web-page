@@ -7,10 +7,14 @@
       />
     </div>
     <div :class="project.textOrder" class="text-width">
-      {{ project.text }}
+      <p class="description">{{ project.text }}</p>
       <div class="dates">
-        <span class="material-icons-outlined">construction</span>
+        <span class="material-icons-outlined">miscellaneous_services</span>
         <p>{{ project.dates }}</p>
+      </div>
+      <div class="tools">
+        <span class="material-icons-outlined">construction</span>
+        <ToolsImages :images="project.images" />
       </div>
       <div class="buttons-wrapper">
         <a :href="`${project.code}`" target="_blank"
@@ -31,7 +35,13 @@
 </template>
 
 <script>
+import ToolsImages from "./ToolsImages.vue";
+
 export default {
+  name: "Project",
+  components: {
+    ToolsImages,
+  },
   name: "Project",
   props: {
     project: {
@@ -64,10 +74,10 @@ export default {
     }
   }
 
-  .dates {
+  .dates,
+  .tools {
     display: flex;
     align-items: center;
-    padding: 20px 0;
 
     .material-icons-outlined {
       font-family: "Material Icons";
@@ -79,6 +89,14 @@ export default {
       font-family: "Chakra Petch", sans-serif;
       letter-spacing: 3px;
     }
+  }
+
+  .dates {
+    padding: 20px 0;
+  }
+
+  .tools {
+    padding-bottom: 20px;
   }
 
   .glow-on-hover {
@@ -175,6 +193,12 @@ export default {
 
   .text-width {
     width: 60%;
+
+    .description {
+      font-family: "Varela Round", sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+    }
   }
 
   .image-width {
