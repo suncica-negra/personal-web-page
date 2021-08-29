@@ -1,14 +1,13 @@
 export const myProjects = [
     {
-        name: "my-web",
+        name: "myweb",
         imageSrc: "nophoto.svg",
         imageOrder: "second",
         textOrder: "first",
         dates: "04.08.2021.",
         images: ["nuxt", "css3"],
         code: "https://github.com/suncica-negra/personal-web-page",
-        web: "",
-        text: "Stranica koju upravo gledate nastala je u želji da pokažem svoje trenutno znanje iz frontend tehnologije, ali i kao neka vrsta zamjene za CV. Ovo je moj prvi samostalni projekt nakon zaposlenja u ITu. Stranica je dvojezična, korisnik može postaviti svijetlu i tamnu temu ovisno o svojoj želji.",
+        web: ""
     },
     {
         name: "codesnippets",
@@ -18,8 +17,7 @@ export const myProjects = [
         dates: "25.09.2020. - 26.09.2020.",
         images: ["javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/code-snippets",
-        web: "https://suncica-negra.github.io/code-snippets/",
-        text: "Web aplikacija s 4 manje aplikacije: konvertira broj iz jedne baze u drugu, formatira broj na način da stavi točku iza željenog broja znamenaka, formatira broj tako da makne zareze iz njega, iz liste gdje su nabrojani članovi više obitelji ispiše rečenicu sa članovima pojedine obitelji.",
+        web: "https://suncica-negra.github.io/code-snippets/"
     },
     {
         name: "marinda",
@@ -29,8 +27,7 @@ export const myProjects = [
         dates: "14.08.2020.",
         images: ["javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/marinda",
-        web: "https://suncica-negra.github.io/marinda/",
-        text: "Web stranica rađena po XD predlošku kao jedan od testnih zadataka u svrhu zaposlenja. Izrada je trajala 8 sati.",
+        web: "https://suncica-negra.github.io/marinda/"
     },
     {
         name: "adressbook",
@@ -40,8 +37,7 @@ export const myProjects = [
         dates: "09.08.2020. - 10.08.2020.",
         images: ["vuejs", "mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/web-address-book",
-        web: "https://my-web-address-book.herokuapp.com",
-        text: "Jednostavan, ali funkcionalan web adresar s animiranim komponentama što poboljšava korisničko iskustvo. Svako korisnik vidi samo svoje kontakte, može ih filtrirati i pretraživati po imenu, prezimenu ili po jednom i drugom. Također može uređivati pojedini konatkt ili ga obrisati.",
+        web: "https://my-web-address-book.herokuapp.com"
     },
     {
         name: "testplatform",
@@ -51,8 +47,7 @@ export const myProjects = [
         dates: "12.04.2020. - 04.07.2020.",
         images: ["mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/Test-Platform",
-        web: "https://test--platform.herokuapp.com",
-        text: "Aplikacija nastala kao odgovor na potrebu za ispitivanjem, ocjenjivanjem i praćenjem aktivnosti u vrijeme online nastave dok su škole zatvorene za vrijeme korona virusa. Ispiti su vremenski ograničeni, otvaraju se u novom prozoru i blokirane su opcije refresh, back i reload. Ispiti se spremaju u MongoDB bazu iz koje se mogu exportati. Također se spremaju sesije korisnika (vrijeme svakog logiranja u sustav). Responzivnog je dizajna i dobro izgleda i na manjim ekranima (mobitel...)",
+        web: "https://test--platform.herokuapp.com"
     },
     {
         name: "webshop",
@@ -62,8 +57,7 @@ export const myProjects = [
         dates: "01.07.2020. - 04.09.2020.",
         images: ["mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/web-shop",
-        web: "https://my-awesome-web-shop.herokuapp.com",
-        text: "Jednostavan, ali funkcionalan web shop. Postoji mogućnost registracije i prijave u sustav. Prije same narudžbe proizvoda postoji mogućnost odabira jednog ili više od tri dostupna popusta te se tako kreira finalna cijena koju naručitelj plaća. Proizvodi se mogu dodati i brisati iz košarice, a također se spremaju narudžbe svakog pojedinog kupca.",
+        web: "https://my-awesome-web-shop.herokuapp.com"
     },
     {
         name: "weather",
@@ -73,8 +67,7 @@ export const myProjects = [
         dates: "01.05.2020. - 04.07.2020.",
         images: ["nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/Awesome-Cro-Weather-App",
-        web: "https://awesome-cro-weather-app.herokuapp.com",
-        text: "Aplikacija koja prikazuje trenutno vrijeme u odabranom gradu u realnom vremenu (podaci se refrešaju svakih 10 sekundi). Koristi API za povlačenje podataka. Responzivnog je dizajna i dobro izgleda i na manjim ekranima (mobitel...)",
+        web: "https://awesome-cro-weather-app.herokuapp.com"
     },
     {
         name: "travel",
@@ -84,8 +77,7 @@ export const myProjects = [
         dates: "28.02.2020. - 04.07.2020.",
         images: ["mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/Travel-Assistant",
-        web: "https://travel--assistant.herokuapp.com",
-        text: "Koristi API za povlačenje podataka o državama, gradovima, zračnim lukama, aviokompanijama, avionima, vremenskim zonama, valutama i jezicima. Također preko API-ja i autocomplete search formi se može spremiti željena avionska karta. Aplikacija je spojena na MongoDB bazu. Može pohranjivati, pregledavati i brisati podatke iz baze.",
+        web: "https://travel--assistant.herokuapp.com"
     },
     {
         name: "exchange",
@@ -95,8 +87,7 @@ export const myProjects = [
         dates: "11.02.2020. - 04.07.2020.",
         images: ["nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/HNB-Exchange-Rate",
-        web: "https://damp-reef-55288.herokuapp.com",
-        text: "Koristi API za povlačenje podataka o tečaju. Preračunava iz jedne valute u drugu, izlistava tečaj.",
+        web: "https://damp-reef-55288.herokuapp.com"
     },
     {
         name: "croblog",
@@ -106,8 +97,7 @@ export const myProjects = [
         dates: "13.02.2020. - 04.07.2020.",
         images: ["mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/CRO-BLOG",
-        web: "https://hidden-plateau-63597.herokuapp.com",
-        text: "Spojen na MongoDB bazu u koju pohranjuje korisnike, postove i komentare. Postovi i komentari se mogu dodavati, editirati i brisati ovisno o korisniku - admin (ja) mogu sve, pojedini korisnik može editirati i brisati samo svoje komentare, ne može dodavati postove.",
+        web: "https://hidden-plateau-63597.herokuapp.com"
     },
     {
         name: "todo",
@@ -117,8 +107,7 @@ export const myProjects = [
         dates: "13.02.2020. - 04.07.2020.",
         images: ["mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/ToDo-List",
-        web: "https://secret-crag-28784.herokuapp.com",
-        text: "ToDo lista za upisivanje i brisanje svakodnevnih zadataka. Podatke upisuje u MongoDB bazu.",
+        web: "https://secret-crag-28784.herokuapp.com"
     },
     {
         name: "newsletter",
@@ -128,8 +117,7 @@ export const myProjects = [
         dates: "13.02.2020. - 04.07.2020.",
         images: ["nodejs", "express", "javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/Sign-Up-forma-za-newsletter",
-        web: "https://glacial-peak-43506.herokuapp.com",
-        text: "Sign Up forma za newsletter povezana s Mailchimp platformom.",
+        web: "https://glacial-peak-43506.herokuapp.com"
     },
     {
         name: "lagonatis",
@@ -139,7 +127,6 @@ export const myProjects = [
         dates: "28.06.2019. - 04.07.2020.",
         images: ["javascript", "css3", "html5"],
         code: "https://github.com/suncica-negra/Lagonatis",
-        web: "https://suncica-negra.github.io/Lagonatis/",
-        text: "Prva samostalno rađena web stranica prema vlastitoj zamisli i dizajnu. Responzivnog je dizajna i dobro izgleda i na manjim ekranima (mobitel...).",
+        web: "https://suncica-negra.github.io/Lagonatis/"
     },
 ]

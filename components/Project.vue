@@ -7,7 +7,7 @@
       />
     </div>
     <div :class="project.textOrder" class="text-width">
-      <p class="description">{{ project.text }}</p>
+      <p class="description">{{ $t("general.projects.description." + project.name) }}</p>
       <div class="dates">
         <span class="material-icons-outlined">miscellaneous_services</span>
         <p>{{ project.dates }}</p>
