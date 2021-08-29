@@ -18,6 +18,7 @@
   --cookie-close: rgba(0, 0, 0, 0.1);
   --cookie-close-border: rgba(0, 0, 0, 0.2);
   --contact-icon: #000000;
+  --bg-transparent: rgba(243, 245, 244, 0.6);
 }
 
 .dark-mode {
@@ -37,10 +38,10 @@
   --cookie-close: rgba(255, 255, 255, 0.1);
   --cookie-close-border: rgba(255, 255, 255, 0.2);
   --contact-icon: #ababab;
+  --bg-transparent: rgba(9, 26, 40, 0.6);
 }
 
-/* font-family: 'Bungee Hairline', cursive;
-font-family: 'Jura', sans-serif;
+/* font-family: 'Jura', sans-serif;
 font-family: 'Play', sans-serif;
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Righteous', cursive;
@@ -51,7 +52,8 @@ font-family: 'Tomorrow', sans-serif;
 font-family: 'Source Code Pro', monospace;
 font-family: 'Chakra Petch', sans-serif;
 font-family: 'Goldman', cursive;
-font-family: 'Varela Round', sans-serif; */
+font-family: 'Varela Round', sans-serif;
+font-family: 'Bungee Hairline', cursive; */
 
 ::-moz-selection {
   /* Code for Firefox */

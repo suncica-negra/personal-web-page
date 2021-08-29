@@ -22,6 +22,8 @@ module.exports = {
         linkedin: "Connect"
     },
     projects: {
+        title: "Projects",
+        toTop: "to top",
         tabOne: "Professional projects",
         tabTwo: "Private projects",
         tabTwoTitle: "Listed below are projects I have done myself. They are presented in such a way that they are listed from the newest to the oldest. My first project is at the very bottom of the page, and the last one is just below this text.",

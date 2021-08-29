@@ -22,6 +22,8 @@ module.exports = {
         linkedin: "Poveži se"
     },
     projects: {
+        title: "Projekti",
+        toTop: "na vrh",
         tabOne: "Profesionalni projekti",
         tabTwo: "Privatni projekti",
         tabTwoTitle: "Dolje su navedeni projekti koje sam radila sama. Prikazani su na način da su izlistani od najnovijeg prema najstarijem, tj. prvi moj projekt je na samom dnu stranice, a zadnji je odmah ispod ovog teksta.",

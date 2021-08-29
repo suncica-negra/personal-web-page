@@ -62,7 +62,13 @@ export default {
           en: '/about'
         }
       }
-    }]
+    }],
+    ['vue-scrollto/nuxt', {
+      duration: 1000,
+      easing: "ease-in-out",
+      offset: 0,
+      container: "body"
+    }],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
