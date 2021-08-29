@@ -131,7 +131,6 @@ export default {
       font-size: 16px;
       font-weight: 700;
       color: var(--color);
-      text-decoration: none;
       justify-content: center;
 
       svg {

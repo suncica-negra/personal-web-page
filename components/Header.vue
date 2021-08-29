@@ -161,7 +161,6 @@ export default {
     width: unset;
     height: unset;
     color: #fdf9f3;
-    text-decoration: none;
     padding: 20px;
     margin-right: 20px;
     letter-spacing: 1.7px;
@@ -177,7 +176,6 @@ export default {
   }
 
   &:hover {
-    text-decoration: none;
     box-shadow: 0 0 15px #d3d6db;
     transform: scale(1.1);
 
