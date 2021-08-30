@@ -26,9 +26,11 @@ module.exports = {
         toTop: "to top",
         tabOne: "Professional projects",
         tabTwo: "Private projects",
+        tabOneTitle: "ENG ////// Naslov",
         tabTwoTitle: "Listed below are projects I have done myself. They are presented in such a way that they are listed from the newest to the oldest. My first project is at the very bottom of the page, and the last one is just below this text.",
         codeButton: "Code",
-        webButton: "Open",
+        casestudyButton: "More",
+        webButton: "www",
         description: {
             myweb: "The page you are currently viewing was created with the desire to show my current knowledge of frontend technology, but also as a kind of replacement for a CV. This is my first independent project after getting a job at IT as a programmer. The site is bilingual, the user can set a light and a dark theme depending on their preference.",
             codesnippets: "SPA web app composed of four smaller applications: convert a number from one base to another, formats the number by placing a dot after the desired number of digits, remove commas from a comma-separated number, from the string where the members of several families are listed, print a sentence with the members of each family.",
@@ -42,7 +44,17 @@ module.exports = {
             croblog: "Connected to a MongoDB database that stores files, posts, and comments. Posts and comments can be added, edited, and deleted depending on the user - admin (I) can do everything, the individual user can edit and delete only their comments, can't add posts.",
             todo: "ToDo list for entering and deleting daily tasks. It enters the data into the MongoDB database.",
             newsletter: "Sign Up newsletter form linked to the Mailchimp platform.",
-            lagonatis: "The first self-made website according to my idea and design. It has a responsive design and looks good on smaller screens (mobile phone ...)."
+            lagonatis: "The first self-made website according to my idea and design. It has a responsive design and looks good on smaller screens (mobile phone ...).",
+            tcc: "ENG //////// Opis",
+            optilogic: "ENG //////// Opis",
+            neradim: "ENG //////// Opis",
+            hangar: "ENG //////// Opis",
+            timnovak: "ENG //////// Opis",
+            kodius: "ENG //////// Opis",
+            babiccibaric: "ENG //////// Opis",
+            upequity: "ENG //////// Opis",
+            aktivnigradani: "ENG //////// Opis",
+            flexcareers: "ENG //////// Opis",
         }
     }
 }

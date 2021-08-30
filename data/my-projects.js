@@ -5,7 +5,7 @@ export const myProjects = [
         imageOrder: "second",
         textOrder: "first",
         dates: "04.08.2021.",
-        images: ["nuxt", "css3"],
+        images: ["nuxt", "scss"],
         code: "https://github.com/suncica-negra/personal-web-page",
         web: ""
     },

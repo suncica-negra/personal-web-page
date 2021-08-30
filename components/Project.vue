@@ -7,7 +7,9 @@
       />
     </div>
     <div :class="project.textOrder" class="text-width">
-      <p class="description">{{ $t("general.projects.description." + project.name) }}</p>
+      <p class="description">
+        {{ $t("general.projects.description." + project.name) }}
+      </p>
       <div class="dates">
         <span class="material-icons-outlined">miscellaneous_services</span>
         <p>{{ project.dates }}</p>
@@ -17,9 +19,21 @@
         <ToolsImages :images="project.images" />
       </div>
       <div class="buttons-wrapper">
-        <a :href="`${project.code}`" target="_blank"
+        <a
+          v-if="project.code !== undefined && project.code !== ''"
+          :href="`${project.code}`"
+          target="_blank"
           ><button class="glow-on-hover" type="button">
             <code>{{ $t("general.projects.codeButton") }}</code>
+            <span class="material-icons-outlined">code</span>
+          </button></a
+        >
+        <a
+          v-if="project.casestudy !== undefined && project.casestudy !== ''"
+          :href="`${project.casestudy}`"
+          target="_blank"
+          ><button class="glow-on-hover" type="button">
+            <code>{{ $t("general.projects.casestudyButton") }}</code>
             <span class="material-icons-outlined">code</span>
           </button></a
         >

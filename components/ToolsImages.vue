@@ -18,6 +18,10 @@ import express from "@/assets/images/express.svg?inline";
 import nuxt from "@/assets/images/nuxt.svg?inline";
 import angular from "@/assets/images/angular.svg?inline";
 import mongodb from "@/assets/images/mongodb.svg?inline";
+import coffeescript from "@/assets/images/coffeescript.svg?inline";
+import graphql from "@/assets/images/graphql.svg?inline";
+import scss from "@/assets/images/scss.svg?inline";
+
 
 export default {
   name: "ToolsImages",
@@ -40,6 +44,9 @@ export default {
     nuxt,
     angular,
     mongodb,
+    coffeescript,
+    graphql,
+    scss,
   },
 };
 </script>

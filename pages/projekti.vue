@@ -33,7 +33,12 @@
       </div>
       <div class="tabs">
         <div v-if="active == 1" class="tab">
-          <p class="subtitle">Prvi tab</p>
+          <p class="subtitle">{{ $t("general.projects.tabOneTitle") }}</p>
+          <Project
+            v-for="(project, i) in professionalProjects"
+            :key="i"
+            :project="project"
+          />
         </div>
         <div v-if="active == 2" class="tab">
           <p class="subtitle">{{ $t("general.projects.tabTwoTitle") }}</p>
@@ -51,6 +56,7 @@
 <script>
 import Project from "../components/Project.vue";
 import { myProjects } from "../data/my-projects";
+import { professionalProjects } from "../data/professionalProjects";
 
 export default {
   components: {
@@ -76,6 +82,10 @@ export default {
     myProjects() {
       return myProjects;
     },
+
+    professionalProjects() {
+      return professionalProjects;
+    }
   },
   methods: {
     toggleActive(tab) {

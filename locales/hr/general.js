@@ -26,9 +26,11 @@ module.exports = {
         toTop: "na vrh",
         tabOne: "Profesionalni projekti",
         tabTwo: "Privatni projekti",
+        tabOneTitle: "////// Naslov",
         tabTwoTitle: "Dolje su navedeni projekti koje sam radila sama. Prikazani su na način da su izlistani od najnovijeg prema najstarijem, tj. prvi moj projekt je na samom dnu stranice, a zadnji je odmah ispod ovog teksta.",
-        codeButton: "Kod",
-        webButton: "Otvori",
+        codeButton: "Vidi kod",
+        casestudyButton: "Više",
+        webButton: "web",
         description: {
             myweb: "Stranica koju upravo gledate nastala je u želji da pokažem svoje trenutno znanje iz frontend tehnologije, ali i kao neka vrsta zamjene za CV. Ovo je moj prvi samostalni projekt nakon zaposlenja u ITu kao programerka. Stranica je dvojezična, korisnik može postaviti svijetlu i tamnu temu ovisno o svojoj želji.",
             codesnippets: "Web aplikacija s četiri manje aplikacije: konvertira broj iz jedne baze u drugu, formatira broj na način da stavi točku iza željenog broja znamenaka, formatira broj tako da makne zareze iz njega, iz liste gdje su nabrojani članovi više obitelji ispiše rečenicu sa članovima pojedine obitelji.",
@@ -42,7 +44,17 @@ module.exports = {
             croblog: "Spojen na MongoDB bazu u koju pohranjuje korisnike, postove i komentare. Postovi i komentari se mogu dodavati, editirati i brisati ovisno o korisniku - admin (ja) mogu sve, pojedini korisnik može editirati i brisati samo svoje komentare, ne može dodavati postove.",
             todo: "ToDo lista za upisivanje i brisanje svakodnevnih zadataka. Podatke upisuje u MongoDB bazu.",
             newsletter: "Sign Up forma za newsletter povezana s Mailchimp platformom.",
-            lagonatis: "Prva samostalno rađena web stranica prema vlastitoj zamisli i dizajnu. Responzivnog je dizajna i dobro izgleda i na manjim ekranima (mobitel...)."
+            lagonatis: "Prva samostalno rađena web stranica prema vlastitoj zamisli i dizajnu. Responzivnog je dizajna i dobro izgleda i na manjim ekranima (mobitel...).",
+            tcc: "//////// Opis",
+            optilogic: "//////// Opis",
+            neradim: "//////// Opis",
+            hangar: "//////// Opis",
+            timnovak: "//////// Opis",
+            kodius: "//////// Opis",
+            babiccibaric: "//////// Opis",
+            upequity: "//////// Opis",
+            aktivnigradani: "//////// Opis",
+            flexcareers: "//////// Opis",
         }
     }
 }
