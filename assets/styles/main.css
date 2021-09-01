@@ -109,6 +109,11 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.material-icons-outlined {
+  font-family: "Material Icons";
+  font-size: 30px;
+}
+
 html,
 body,
 div,

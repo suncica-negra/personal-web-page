@@ -94,8 +94,6 @@ export default {
     align-items: center;
 
     .material-icons-outlined {
-      font-family: "Material Icons";
-      font-size: 30px;
       margin-right: 20px;
     }
 
@@ -182,8 +180,6 @@ export default {
 
     .material-icons-outlined {
       margin: 0 0 0 20px;
-      font-family: "Material Icons";
-      font-size: 30px;
     }
 
     code {

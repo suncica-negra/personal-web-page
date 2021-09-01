@@ -1,6 +1,9 @@
 <template>
   <div :onscroll="onScroll">
-    <h1>{{ $t("general.projects.title") }}</h1>
+    <h1 class="project-title">
+      {{ $t("general.projects.title") }}
+      <span class="material-icons-outlined">code</span>
+    </h1>
     <div class="projects-holder">
       <div class="projects-menu-wrapper">
         <div class="sticky">
@@ -85,7 +88,7 @@ export default {
 
     professionalProjects() {
       return professionalProjects;
-    }
+    },
   },
   methods: {
     toggleActive(tab) {
@@ -101,6 +104,17 @@ export default {
 </script>
 
 <style lang="scss">
+.project-title {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  span {
+    font-size: 50px;
+    margin-left: 10px;
+  }
+}
+
 .projects-holder {
   padding-top: 30px;
   display: grid;
@@ -163,11 +177,6 @@ export default {
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       z-index: 1;
-
-      .material-icons-outlined {
-        font-family: "Material Icons";
-        font-size: 30px;
-      }
 
       p {
         font-family: "Bungee Hairline", cursive;
