@@ -59,7 +59,7 @@
 <script>
 import Project from "../components/Project.vue";
 import { myProjects } from "../data/my-projects";
-import { professionalProjects } from "../data/professionalProjects";
+import { professionalProjects } from "../data/professional-projects";
 
 export default {
   components: {
@@ -85,7 +85,6 @@ export default {
     myProjects() {
       return myProjects;
     },
-
     professionalProjects() {
       return professionalProjects;
     },

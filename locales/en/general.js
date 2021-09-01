@@ -56,5 +56,10 @@ module.exports = {
             aktivnigradani: "The site presents a volunteer association and the emphasis was on ‘different from others’. Therefore, the page does not have a classic vertical scroll but a custom horizontal one. Also, the choice of photos is such that it is immediately obvious that this is not a classic 'boring' page.",
             flexcareers: "A web application that promotes the return to work and employment of young mothers/people after maternity leave. The app is very large with a lot of options and possibilities that it offers to its clients and thus has a 'strong and heavy' backend that is handled via Ruby-on-Rails.",
         }
+    },
+    about: {
+        title: "About me",
+        today: "now",
+        past: "ancient history"
     }
 }

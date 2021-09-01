@@ -56,5 +56,10 @@ module.exports = {
             aktivnigradani: "Stranica prezentira volontersku udrugu i naglask je bio na 'drugačiji od drugih'. Zbog toga stranica nema klasični vertikalni skrol nego prilagođeni horizontalni. Također, izbor fotografija je takav da se odmah vidi da nije riječ o klasničnoj 'dosadnoj' stranici.",
             flexcareers: "Web aplikacija koja promovira povratak na posao i zaposlenje mladih majki/ljudi nakon porodiljnog dopusta. Aplikacija je vrlo velika s jako puno opcija i mogućnosti koje nudi svojim klijentima te samim time ima 'jaki i teški' backend koji se hendla preko Ruby-on-Rails-a.",
         }
+    },
+    about: {
+        title: "O meni",
+        today: "danas",
+        past: "daleka prošlost"
     }
 }

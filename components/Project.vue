@@ -56,7 +56,6 @@ export default {
   components: {
     ToolsImages,
   },
-  name: "Project",
   props: {
     project: {
       type: Object,

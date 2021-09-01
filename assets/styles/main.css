@@ -14,11 +14,15 @@
   --footer-svg: #ababab;
   --copy: #919090;
   --box-shadow-transparent: rgba(78, 78, 78, 0.3);
+  --box-shadow-less-transparent: rgba(78, 78, 78, 0.5);
   --cookie: #091a28;
   --cookie-close: rgba(0, 0, 0, 0.1);
   --cookie-close-border: rgba(0, 0, 0, 0.2);
   --contact-icon: #000000;
   --bg-transparent: rgba(243, 245, 244, 0.6);
+  --green: #11d445;
+  --blue: #1131d4;
+  --card-text-color: black;
 }
 
 .dark-mode {
@@ -34,11 +38,15 @@
   --footer-svg: #000000;
   --copy: #404040;
   --box-shadow-transparent: rgba(211, 214, 219, 0.3);
+  --box-shadow-less-transparent: rgba(211, 214, 219, 0.5);
   --cookie: #919090;
   --cookie-close: rgba(255, 255, 255, 0.1);
   --cookie-close-border: rgba(255, 255, 255, 0.2);
   --contact-icon: #ababab;
   --bg-transparent: rgba(9, 26, 40, 0.6);
+  --green: #0c912f;
+  --blue: #5c75f7;
+  --card-text-color: #243746;
 }
 
 /* font-family: 'Jura', sans-serif;
