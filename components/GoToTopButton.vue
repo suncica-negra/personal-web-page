@@ -34,6 +34,7 @@ export default {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   z-index: 1;
+  text-align: center;
 
   p {
     font-family: "Bungee Hairline", cursive;
