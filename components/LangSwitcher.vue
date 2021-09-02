@@ -52,10 +52,13 @@ export default {
     height: 40px;
   }
 
-  svg,
-  .cro {
+  svg {
     width: 40px;
     height: 40px;
+  }
+
+  svg,
+  .cro {
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
   }
@@ -63,6 +66,8 @@ export default {
   .cro {
     border: 1px solid white;
     display: block;
+    width: 38px;
+    height: 38px;
   }
 }
 
