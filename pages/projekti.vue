@@ -22,17 +22,7 @@
             <p class="golden-text-color">{{ $t("general.projects.tabTwo") }}</p>
           </div>
         </div>
-        <transition
-          enter-active-class="scale-in-bl"
-          leave-active-class="scale-out-bl"
-        >
-          <div id="back-to-top" v-if="offsetTop > 700" v-scroll-to="'#body'">
-            <span class="material-icons-outlined"
-              >keyboard_double_arrow_up</span
-            >
-            <p>{{ $t("general.projects.toTop") }}</p>
-          </div>
-        </transition>
+        <GoToTopButton :offsetTop="offsetTop" />
       </div>
       <div class="tabs">
         <div v-if="active == 1" class="tab">
@@ -57,6 +47,7 @@
 </template>
 
 <script>
+import GoToTopButton from "../components/GoToTopButton.vue";
 import Project from "../components/Project.vue";
 import { myProjects } from "../data/my-projects";
 import { professionalProjects } from "../data/professional-projects";
@@ -64,6 +55,7 @@ import { professionalProjects } from "../data/professional-projects";
 export default {
   components: {
     Project,
+    GoToTopButton,
   },
   data() {
     return {
@@ -165,24 +157,6 @@ export default {
         font-weight: 700;
       }
     }
-
-    #back-to-top {
-      position: fixed;
-      bottom: 25px;
-      left: 30px;
-      box-shadow: inset -7px 0 39px -7px var(--box-shadow-transparent);
-      border-radius: 50%;
-      padding: 9px 15px;
-      cursor: pointer;
-      transition: all 0.5s ease-in-out;
-      z-index: 1;
-
-      p {
-        font-family: "Bungee Hairline", cursive;
-        font-weight: 600;
-        font-size: 16px;
-      }
-    }
   }
 
   .tabs {
@@ -236,19 +210,6 @@ export default {
           box-shadow: inset 0 10px 15px 1px var(--box-shadow-transparent);
         }
       }
-
-      #back-to-top {
-        position: fixed;
-        bottom: 25px;
-        left: 25px;
-        box-shadow: inset -7px 0 39px -7px var(--box-shadow-transparent);
-        background-color: var(--bg-transparent);
-        padding: 19px 21px;
-
-        p {
-          display: none;
-        }
-      }
     }
 
     .tabs {
@@ -259,47 +220,6 @@ export default {
         box-shadow: inset -4px -20px 39px -12px var(--box-shadow-transparent);
       }
     }
-  }
-}
-
-.scale-in-bl {
-  -webkit-animation: scale-in-bl 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: scale-in-bl 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-@-webkit-keyframes scale-in-bl {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in-bl {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    opacity: 1;
   }
 }
 </style>

@@ -3,6 +3,7 @@
     <div class="about-me-card-holder">
       <p>Kartica</p>
       {{ card.one }}
+      <span class="material-icons-outlined">update</span>
       <span class="material-icons-outlined">school</span>
       <span class="material-icons-outlined">history_edu</span>
       <span class="circle"></span>
