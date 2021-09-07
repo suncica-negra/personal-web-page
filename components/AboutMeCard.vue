@@ -1,11 +1,46 @@
 <template>
   <div class="about-me-card">
     <div class="about-me-card-holder">
-      <p>Kartica</p>
-      {{ card.one }}
-      <span class="material-icons-outlined">update</span>
-      <span class="material-icons-outlined">school</span>
-      <span class="material-icons-outlined">history_edu</span>
+      <span v-if="card.job" class="picture-desc"
+        ><span class="material-icons-outlined">work</span>
+        <p>{{ card.job }}</p></span
+      >
+      <span v-if="card.book" class="picture-desc"
+        ><span class="material-icons-outlined">auto_stories</span>
+        <p>{{ card.book }}</p></span
+      >
+      <span v-if="card.formalEducation" class="picture-desc"
+        ><span class="material-icons-outlined">school</span>
+        <p>{{ card.formalEducation }}</p></span
+      >
+      <span v-if="card.born" class="picture-desc"
+        ><span class="material-icons-outlined">child_care</span>
+        <p>{{ card.born }}</p></span
+      >
+      <span v-if="card.informalEducation" class="picture-desc">
+        <span class="material-icons-outlined">history_edu</span>
+        <p>{{ card.informalEducation }}</p>
+      </span>
+      <span v-if="card.date" class="picture-desc"
+        ><span class="material-icons-outlined">update</span
+        >{{ card.date }}</span
+      >
+      <span v-if="card.details">
+        <span v-for="(detail, i) in card.details" :key="i" class="informal">
+          <span class="picture-desc">
+            <span class="desc-wrapper"
+              >{{ detail.courseName
+              }}<span class="material-icons-outlined"
+                >radio_button_checked</span
+              >
+            </span>
+            <span class="desc-wrapper"
+              >{{ detail.tech
+              }}<span class="material-icons-outlined">construction</span>
+            </span>
+          </span>
+        </span>
+      </span>
       <span class="circle"></span>
       <span class="circle ping"></span>
     </div>
@@ -58,6 +93,39 @@ export default {
         &.ping {
           left: -50px;
           top: calc(50% - 22px);
+        }
+      }
+
+      .picture-desc {
+        flex-direction: unset;
+
+        .material-icons-outlined {
+          margin-right: 10px;
+          margin-left: unset;
+        }
+      }
+
+      .informal {
+        .picture-desc {
+          display: grid;
+
+          .desc-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+
+            &:first-child {
+              margin: 0 0 5px 20px;
+            }
+
+            &:last-child {
+              margin: 0 0 0 59px;
+              font-family: "Rajdhani", sans-serif;
+
+              .material-icons-outlined {
+                font-size: 20px;
+              }
+            }
+          }
         }
       }
     }
@@ -113,12 +181,51 @@ export default {
         top: calc(50% - 22px);
       }
     }
+
+    .picture-desc {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-bottom: 10px;
+
+      .material-icons-outlined {
+        margin-left: 10px;
+      }
+
+      p {
+        font-weight: 600;
+      }
+    }
+
+    .informal {
+      .picture-desc {
+        display: grid;
+
+        .desc-wrapper {
+          display: flex;
+          justify-content: flex-end;
+
+          &:first-child {
+            margin: 0 20px 5px 0;
+          }
+
+          &:last-child {
+            margin-right: 59px;
+            font-family: "Rajdhani", sans-serif;
+
+            .material-icons-outlined {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .ping {
-  -webkit-animation: ping 1.5s ease-in-out infinite both;
-  animation: ping 1.5s ease-in-out infinite both;
+  -webkit-animation: ping 2s ease-in-out infinite both;
+  animation: ping 2s ease-in-out infinite both;
 }
 
 @-webkit-keyframes ping {
