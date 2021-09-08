@@ -25,9 +25,9 @@
         ><span class="material-icons-outlined">update</span
         >{{ card.date }}</span
       >
-      <span v-if="card.details">
+      <span v-if="card.details" class="slide" :class="{ down: slideDown }">
         <span v-for="(detail, i) in card.details" :key="i" class="informal">
-          <span class="picture-desc">
+          <span v-if="detail.courseName" class="picture-desc">
             <span class="desc-wrapper"
               >{{ detail.courseName
               }}<span class="material-icons-outlined"
@@ -39,8 +39,17 @@
               }}<span class="material-icons-outlined">construction</span>
             </span>
           </span>
+          <p v-if="detail.description"> {{ detail.description }} </p>
         </span>
       </span>
+      <div
+        @click="slideDown = !slideDown"
+        v-if="card.details"
+        class="open"
+        :class="{ rotate: !slideDown }"
+      >
+        <CloseButton />
+      </div>
       <span class="circle"></span>
       <span class="circle ping"></span>
     </div>
@@ -48,6 +57,8 @@
 </template>
 
 <script>
+import CloseButton from "./svg-image-templates/CloseButton.vue";
+
 export default {
   name: "AboutMeCard",
   props: {
@@ -56,6 +67,14 @@ export default {
       default: () => {},
       required: true,
     },
+  },
+  components: {
+    CloseButton,
+  },
+  data() {
+    return {
+      slideDown: false,
+    };
   },
 };
 </script>
@@ -159,6 +178,41 @@ export default {
       width: 15px;
     }
 
+    .slide {
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+
+      &.down {
+        max-height: 2000px;
+        opacity: 1;
+      }
+    }
+
+    .open {
+      cursor: pointer;
+      z-index: 1;
+      display: flex;
+      align-self: flex-end;
+      transition: all 0.5s ease-in-out;
+      border-radius: 50%;
+      padding: 5px;
+      margin-top: 10px;
+
+      &.rotate {
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        box-shadow: 0 0 15px var(--card-text-color);
+      }
+
+      svg {
+        transition: all 0.5s ease-in-out;
+        fill: var(--card-text-color);
+      }
+    }
+
     .circle {
       background-color: var(--blue);
       border: 3px solid var(--blue);
@@ -211,11 +265,6 @@ export default {
 
           &:last-child {
             margin-right: 59px;
-            font-family: "Rajdhani", sans-serif;
-
-            .material-icons-outlined {
-              font-size: 20px;
-            }
           }
         }
       }

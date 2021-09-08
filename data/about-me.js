@@ -55,7 +55,12 @@ export const aboutMe = [
     },
     {
         job: "Nastavnica fizike u osnovnoj i srednjoj školi (13 različitih škola)",
-        date: "Travanj 2012. - Rujan 2020."
+        date: "Travanj 2012. - Rujan 2020.",
+        details: [
+            {
+                description: "Neki opis za Nastavnica fizike u osnovnoj i srednjoj školi (13 različitih škola) vh"
+            }
+        ]
     },
     {
         job: "Pomoć oko skrbi o mentalno zaostalom 52-godišnjaku",
