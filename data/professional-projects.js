@@ -5,7 +5,7 @@ export const professionalProjects = [
         imageOrder: "first",
         textOrder: "second",
         dates: "23.06.2021. - ...",
-        images: ["angular", "nodejs", "express", "javascript", "css3", "html5"],
+        images: ["angular", "mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         casestudy: "",
         web: "https://www.thecollectivechild.com"
     },

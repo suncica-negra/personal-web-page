@@ -3,33 +3,33 @@
     <div class="about-me-card-holder">
       <span v-if="card.job" class="picture-desc"
         ><span class="material-icons-outlined">work</span>
-        <p>{{ card.job }}</p></span
+        <p>{{ $t("general.about.timeline." + card.job) }}</p></span
       >
       <span v-if="card.book" class="picture-desc"
         ><span class="material-icons-outlined">auto_stories</span>
-        <p>{{ card.book }}</p></span
+        <p>{{ $t("general.about.timeline." + card.book) }}</p></span
       >
       <span v-if="card.formalEducation" class="picture-desc"
         ><span class="material-icons-outlined">school</span>
-        <p>{{ card.formalEducation }}</p></span
+        <p>{{ $t("general.about.timeline." + card.formalEducation) }}</p></span
       >
       <span v-if="card.born" class="picture-desc"
         ><span class="material-icons-outlined">child_care</span>
-        <p>{{ card.born }}</p></span
+        <p>{{ $t("general.about.timeline." + card.born) }}</p></span
       >
       <span v-if="card.informalEducation" class="picture-desc">
         <span class="material-icons-outlined">history_edu</span>
-        <p>{{ card.informalEducation }}</p>
+        <p>{{ $t("general.about.timeline." + card.informalEducation) }}</p>
       </span>
       <span v-if="card.date" class="picture-desc"
         ><span class="material-icons-outlined">update</span
-        >{{ card.date }}</span
+        >{{ $t("general.about.timeline." + card.date) }}</span
       >
       <span v-if="card.details" class="slide" :class="{ down: slideDown }">
         <span v-for="(detail, i) in card.details" :key="i" class="informal">
           <span v-if="detail.courseName" class="picture-desc">
             <span class="desc-wrapper"
-              >{{ detail.courseName
+              >{{ $t("general.about.timeline." + detail.courseName)
               }}<span class="material-icons-outlined"
                 >radio_button_checked</span
               >
@@ -39,7 +39,7 @@
               }}<span class="material-icons-outlined">construction</span>
             </span>
           </span>
-          <p v-if="detail.description"> {{ detail.description }} </p>
+          <p v-if="detail.description"> {{ $t("general.about.timeline." + detail.description) }} </p>
         </span>
       </span>
       <div

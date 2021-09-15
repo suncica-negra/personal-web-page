@@ -1,109 +1,109 @@
 export const aboutMe = [
     {
-        book: "The Clean Coder by Robert Martin",
-        date: "Ožujak 2021."
+        book: "cleanCoder",
+        date: "cleanCoderDate"
     },
     {
-        job: "Junior developer u Kodiusu",
-        date: "Listopad 2020. - sada"
+        job: "kodiusJuniorDeveloper",
+        date: "kodiusJuniorDeveloperDate"
     },
     {
-        informalEducation: "Udemy, freeCodeCamp: Full Stack Web Developer",
-        date: "Siječanj 2019 - Svibanj 2019.",
+        informalEducation: "udemyDeveloper",
+        date: "udemyDeveloperDate",
         details: [
             {
-                courseName: "8 Beautiful Ruby on Rails Apps in 30 Days & TDD - Immersive (Instructor: Yonathan Ayenew)",
+                courseName: "udemyDeveloperRoR8Details",
                 tech: "Ruby on Rails"
             },
             {
-                courseName: "Learn to Program in JavaScript: Beginner to Pro (Instructor: Raghavendra Dixit)",
+                courseName: "udemyDeveloperJSDetails",
                 tech: "JavaScript"
             },
             {
-                courseName: "Ruby Programming Language (Instructor: Mike Dane)",
+                courseName: "udemyDeveloperRubyDetails",
                 tech: "Ruby"
             },
             {
-                courseName: "Ruby on Rails 6 Complete Beginner's Course [2020] (Instructor: David Battersby)",
+                courseName: "udemyDeveloperRoR6Details",
                 tech: "Ruby on Rails 6, PostgreS"
             },
             {
-                courseName: "Ruby on Rails a Beginners Guide (Instructor: Stephen Chesnowitz)",
+                courseName: "udemyDeveloperRoRDetails",
                 tech: "Ruby on Rails, Gems"
             },
             {
-                courseName: "The Complete 2019 Web Development Bootcamp (Instructor: Angela Yu)",
+                courseName: "udemyDeveloperWDevDetails",
                 tech: "HTML, CSS, JavaScript, Node, React"
             },
             {
-                courseName: "The Web Developer Bootcamp (Instructor: Colt Steele)",
+                courseName: "udemyDeveloperWDevSteelDetails",
                 tech: "HTML, CSS, JavaScript, Node, Express"
             },
             {
-                courseName: "Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex) (Instructor: Maximilian Schwarzmüller)",
+                courseName: "udemyDeveloperVueDetails",
                 tech: "Vue, Vuex, Axios, AWS"
             },
             {
-                courseName: "What Is SEO? Learn SEO Basics & Optimize Your Website (Instructor: David Bain)",
+                courseName: "udemyDeveloperSEODetails",
                 tech: "SEO"
             }
         ]
     },
     {
-        formalEducation: "Stručni ispit za profesora fizike, Zagreb",
-        date: "13.11.2014."
+        formalEducation: "exam",
+        date: "examDate"
     },
     {
-        job: "Nastavnica fizike u osnovnoj i srednjoj školi (13 različitih škola)",
-        date: "Travanj 2012. - Rujan 2020.",
+        job: "teacher",
+        date: "teacherDate",
         details: [
             {
-                description: "Neki opis za Nastavnica fizike u osnovnoj i srednjoj školi (13 različitih škola) vh"
+                description: "teacherDescription"
             }
         ]
     },
     {
-        job: "Pomoć oko skrbi o mentalno zaostalom 52-godišnjaku",
-        date: "Siječanj 2009. - Srpanj 2012."
+        job: "mental",
+        date: "mentalDate"
     },
     {
-        job: "Telefonsko anketiranje, Valicon",
-        date: "Prosinac 2008. - Travanj 2009."
+        job: "tel",
+        date: "telDate"
     },
     {
-        job: "Freelancer u kompaniji Polar, Marketing, Sales and Human Resources",
-        date: "Kolovoz 2008. - Prosinac 2009."
+        job: "freelance",
+        date: "freelanceDate"
     },
     {
-        job: "Hostesa u Promoplus Marketing agenciji",
-        date: "Lipanj 2007."
+        job: "promoplus",
+        date: "promoplusDate"
     },
     {
-        job: "Hostesa u wellness centru Dea",
-        date: "Svibanj 2007. - Srpanj 2007."
+        job: "dea",
+        date: "deaDate"
     },
     {
-        job: "Podjela tjednih novina Metropola u Zagrebu",
-        date: "Travanj 2006."
+        job: "metropola",
+        date: "metropolaDate"
     },
     {
-        job: "Konobarica u restoranu Zinfandel´s u The Regent Esplanade hotelu",
-        date: "Svibanj 2005. - Rujan 2013."
+        job: "esplanade",
+        date: "esplanadeDate"
     },
     {
-        formalEducation: "Prirodoslovno-matematički fakultet, Zagreb",
-        date: "Rujan 2004. - Rujan 2012."
+        formalEducation: "pmf",
+        date: "pmfDate"
     },
     {
-        formalEducation: "Opća gimnazija, Srednja škola Krapina",
-        date: "Rujan 2000. - Lipanj 2004."
+        formalEducation: "gym",
+        date: "gymDate"
     },
     {
-        formalEducation: "Osnovna škola 'Marija Lovrenčak', Sveti Križ Začretje",
-        date: "Rujan 1992. - Lipanj 2000."
+        formalEducation: "elem",
+        date: "elemDate"
     },
     {
-        born: "Rođena",
-        date: "Siječanj 1986."
+        born: "born",
+        date: "bornDate"
     }
 ]
