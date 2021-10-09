@@ -62,6 +62,17 @@ module.exports = {
         title: "About me",
         today: "now",
         past: "ancient history",
+        hoby: {
+            title: "Hobbies",
+            run: "jogging",
+            bike: "cycling",
+            tennis: "tennis",
+            dance: "dance",
+            swimm: "swimming",
+            read: "reading books (novels and professional literature)",
+            photo: "photography",
+            inst: "software installation and setup"
+        },
         timeline: {
             sql: "SQLBolt - Learn SQL with simple, interactive exercises.",
             sqlDate: "September 2021",

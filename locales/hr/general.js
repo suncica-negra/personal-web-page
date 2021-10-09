@@ -62,6 +62,17 @@ module.exports = {
         title: "O meni",
         today: "danas",
         past: "daleka prošlost",
+        hoby: {
+            title: "Hobiji",
+            run: "trčanje",
+            bike: "bicikliranje",
+            tennis: "tenis",
+            dance: "ples",
+            swimm: "plivanje",
+            read: "čitanje knjiga (romani i stručna literatura)",
+            photo: "fotografiranje",
+            inst: "instalacija i podešavanje softvera"
+        },
         timeline: {
             sql: "SQLBolt - Nauči SQL uz jednostavne interaktivne vježbe.",
             sqlDate: "Rujan 2021.",

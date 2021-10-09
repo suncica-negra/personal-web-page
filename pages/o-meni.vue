@@ -5,21 +5,30 @@
       {{ $t("general.about.title") }}
     </h1>
     <div class="hoby">
-      <p>Hobiji:</p>
+      <p>{{ $t("general.about.hoby.title") }}:</p>
       <p>
-        trčanje <span class="material-icons-outlined">directions_run</span>,
-        <br />bicikliranje
-        <span class="material-icons-outlined"> directions_bike </span>,
-        <br />tenis
-        <span class="material-icons-outlined"> sports_tennis </span>, <br />ples
-        <span class="material-icons-outlined">
-          <span class="material-icons-outlined"> emoji_people </span> </span
-        >, <br />plivanje <span class="material-icons-outlined"> pool </span>,
-        <br />čitanje knjiga (romani i stručna literatura)
-        <span class="material-icons-outlined"> auto_stories </span>,
-        <br />fotografiranje
-        <span class="material-icons-outlined"> photo_camera </span>,
-        <br />instalacija i podešavanje softvera
+        {{ $t("general.about.hoby.run") }}
+        <span class="material-icons-outlined">directions_run</span> <br />{{
+          $t("general.about.hoby.bike")
+        }}
+        <span class="material-icons-outlined"> directions_bike </span> <br />{{
+          $t("general.about.hoby.tennis")
+        }}
+        <span class="material-icons-outlined"> sports_tennis </span> <br />{{
+          $t("general.about.hoby.dance")
+        }}
+        <span class="material-icons-outlined"> emoji_people </span> <br />{{
+          $t("general.about.hoby.swimm")
+        }}
+        <span class="material-icons-outlined"> pool </span> <br />{{
+          $t("general.about.hoby.read")
+        }}
+        <span class="material-icons-outlined"> auto_stories </span> <br />{{
+          $t("general.about.hoby.photo")
+        }}
+        <span class="material-icons-outlined"> photo_camera </span> <br />{{
+          $t("general.about.hoby.inst")
+        }}
         <span class="material-icons-outlined"> app_settings_alt </span>
       </p>
     </div>
