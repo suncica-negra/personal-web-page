@@ -1,5 +1,15 @@
 export const professionalProjects = [
     {
+        name: "forfend",
+        imageSrc: "nophoto.svg",
+        imageOrder: "second",
+        textOrder: "first",
+        dates: "28.09.2021. - 01.10.2021.",
+        images: ["graphql", "react", "css3"],
+        casestudy: "",
+        web: "http://forfendhealth.com"
+    },
+    {
         name: "tcc",
         imageSrc: "tcc.png",
         imageOrder: "first",
@@ -17,7 +27,7 @@ export const professionalProjects = [
         dates: "17.06.2021. - 25.08.2021.",
         images: ["rails", "javascript", "scss", "html5"],
         casestudy: "",
-        web: ""
+        web: "https://optilogic-community.kodius.com"
     },
     {
         name: "neradim",

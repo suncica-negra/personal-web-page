@@ -11,7 +11,9 @@
       >
       <span v-if="card.formalEducation" class="picture-desc"
         ><span class="material-icons-outlined">school</span>
-        <p>{{ $t("general.about.timeline." + card.formalEducation) }}</p></span
+        <p>
+          {{ $t("general.about.timeline." + card.formalEducation) }}
+        </p></span
       >
       <span v-if="card.born" class="picture-desc"
         ><span class="material-icons-outlined">child_care</span>
@@ -39,7 +41,9 @@
               }}<span class="material-icons-outlined">construction</span>
             </span>
           </span>
-          <p v-if="detail.description"> {{ $t("general.about.timeline." + detail.description) }} </p>
+          <p v-if="detail.description">
+            {{ $t("general.about.timeline." + detail.description) }}
+          </p>
         </span>
       </span>
       <div
