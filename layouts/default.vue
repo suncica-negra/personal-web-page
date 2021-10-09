@@ -26,7 +26,6 @@ export default {
 <style lang="scss">
 #body {
   min-height: calc(100vh - 331px);
-  padding: 50px 30px;
   max-width: 1920px;
   margin: 0 auto;
 

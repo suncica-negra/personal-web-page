@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contact">
     <h1>{{ $t("general.contact.title") }}</h1>
     <TrapdoorButton />
   </div>
@@ -15,7 +15,11 @@ export default {
 </script>
 
 <style lang="scss">
-h1 {
-  transition: all 0.5s ease-in-out;
+.contact {
+  padding: 50px 30px;
+
+  h1 {
+    transition: all 0.5s ease-in-out;
+  }
 }
 </style>

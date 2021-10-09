@@ -1,5 +1,5 @@
 <template>
-  <div :onscroll="onScroll">
+  <div :onscroll="onScroll" class="projects">
     <h1 class="project-title">
       {{ $t("general.projects.title") }}
       <span class="material-icons-outlined">code</span>
@@ -95,6 +95,10 @@ export default {
 </script>
 
 <style lang="scss">
+.projects {
+  padding: 50px 30px;
+}
+
 .project-title {
   display: flex;
   align-items: center;
