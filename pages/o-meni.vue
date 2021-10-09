@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about">
     <h1 class="about-me-title">
       <span class="material-icons-outlined">perm_identity</span>
       {{ $t("general.about.title") }}
@@ -82,6 +82,10 @@ export default {
 </script>
 
 <style lang="scss">
+.about {
+  padding: 50px 30px;
+}
+
 .about-me-title {
   display: flex;
   align-items: center;
@@ -127,10 +131,10 @@ export default {
   justify-content: space-evenly;
   margin: 30px 0;
   padding: 65px 0;
-  background-image: url("../assets/images/cloud.svg");
+  background-image: url("../assets/images/fireworks.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 632px;
+  background-size: 50%;
   transition: all 0.5s ease-in-out;
 
   p {
