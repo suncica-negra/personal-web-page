@@ -63,6 +63,9 @@ module.exports = {
         today: "danas",
         past: "daleka prošlost",
         timeline: {
+            sql: "SQLBolt - Nauči SQL uz jednostavne interaktivne vježbe.",
+            sqlDate: "Rujan 2021.",
+            sqlDetails: "Introduction to SQL",
             cleanCoder: "Robert Martin: The Clean Coder",
             cleanCoderDate: "Ožujak 2021.",
             kodiusJuniorDeveloper: "Junior developer u Kodiusu",

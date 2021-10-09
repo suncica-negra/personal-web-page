@@ -142,11 +142,6 @@ export default {
 
             &:last-child {
               margin: 0 0 0 59px;
-              font-family: "Rajdhani", sans-serif;
-
-              .material-icons-outlined {
-                font-size: 20px;
-              }
             }
           }
         }
@@ -269,6 +264,11 @@ export default {
 
           &:last-child {
             margin-right: 59px;
+            font-family: "Rajdhani", sans-serif;
+
+            .material-icons-outlined {
+              font-size: 20px;
+            }
           }
         }
       }

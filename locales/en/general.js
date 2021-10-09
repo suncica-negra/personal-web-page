@@ -63,6 +63,9 @@ module.exports = {
         today: "now",
         past: "ancient history",
         timeline: {
+            sql: "SQLBolt - Learn SQL with simple, interactive exercises.",
+            sqlDate: "September 2021",
+            sqlDetails: "Introduction to SQL",
             cleanCoder: "The Clean Coder by Robert Martin",
             cleanCoderDate: "March 2021",
             kodiusJuniorDeveloper: "Junior developer at Kodius",

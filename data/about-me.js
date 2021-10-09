@@ -1,5 +1,15 @@
 export const aboutMe = [
     {
+        informalEducation: "sql",
+        date: "sqlDate",
+        details: [
+            {
+                courseName: "sqlDetails",
+                tech: "SQL"
+            }
+        ]
+    },
+    {
         book: "cleanCoder",
         date: "cleanCoderDate"
     },
