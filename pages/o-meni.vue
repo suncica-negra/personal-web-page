@@ -4,6 +4,25 @@
       <span class="material-icons-outlined">perm_identity</span>
       {{ $t("general.about.title") }}
     </h1>
+    <div class="hoby">
+      <p>Hobiji:</p>
+      <p>
+        trčanje <span class="material-icons-outlined">directions_run</span>,
+        <br />bicikliranje
+        <span class="material-icons-outlined"> directions_bike </span>,
+        <br />tenis
+        <span class="material-icons-outlined"> sports_tennis </span>, <br />ples
+        <span class="material-icons-outlined">
+          <span class="material-icons-outlined"> emoji_people </span> </span
+        >, <br />plivanje <span class="material-icons-outlined"> pool </span>,
+        <br />čitanje knjiga (romani i stručna literatura)
+        <span class="material-icons-outlined"> auto_stories </span>,
+        <br />fotografiranje
+        <span class="material-icons-outlined"> photo_camera </span>,
+        <br />instalacija i podešavanje softvera
+        <span class="material-icons-outlined"> app_settings_alt </span>
+      </p>
+    </div>
     <GoToTopButton :offsetTop="offsetTop" />
     <p class="time">{{ $t("general.about.today") }}</p>
     <div class="cards">
@@ -87,6 +106,36 @@ export default {
     width: 4px;
     z-index: -1;
     transition: all 0.5s ease-in-out;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: unset;
+  }
+}
+
+.hoby {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+  padding: 65px 0;
+  background-image: url("../assets/images/cloud.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 632px;
+  transition: all 0.5s ease-in-out;
+
+  p {
+    font-family: "Stick No Bills", sans-serif;
+    font-size: 30px;
+
+    &:first-child {
+      font-weight: 700;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    display: grid;
+    text-align: center;
   }
 }
 </style>

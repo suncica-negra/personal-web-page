@@ -276,6 +276,17 @@ export default {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .about-me-card {
+    justify-content: center;
+    width: unset;
+
+    &:nth-child(odd) {
+      justify-content: center;
+    }
+  }
+}
+
 .ping {
   -webkit-animation: ping 2s ease-in-out infinite both;
   animation: ping 2s ease-in-out infinite both;
