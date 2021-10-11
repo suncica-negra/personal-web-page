@@ -131,10 +131,10 @@ export default {
   justify-content: space-evenly;
   margin: 30px 0;
   padding: 65px 0;
-  background-image: url("../assets/images/fireworks.svg");
-  background-position: center;
+  background-image: url("../assets/images/stars.svg");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 100%;
   transition: all 0.5s ease-in-out;
 
   p {
@@ -146,7 +146,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     display: grid;
     text-align: center;
   }
