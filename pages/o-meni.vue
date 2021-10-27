@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about max-dimensions">
     <h1 class="about-me-title">
       <span class="material-icons-outlined">perm_identity</span>
       {{ $t("general.about.title") }}

@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact max-dimensions">
     <h1>{{ $t("general.contact.title") }}</h1>
     <TrapdoorButton />
   </div>

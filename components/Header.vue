@@ -125,7 +125,7 @@ export default {
 
   .header-wrapper {
     display: flex;
-    padding: 20px 50px;
+    padding: 20px 30px;
     justify-content: space-between;
     max-width: 1920px;
     margin: 0 auto;

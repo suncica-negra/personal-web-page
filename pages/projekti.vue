@@ -1,5 +1,5 @@
 <template>
-  <div :onscroll="onScroll" class="projects">
+  <div :onscroll="onScroll" class="projects max-dimensions">
     <h1 class="project-title">
       {{ $t("general.projects.title") }}
       <span class="material-icons-outlined">code</span>
