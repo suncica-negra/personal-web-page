@@ -23,6 +23,8 @@
   --green: #11d445;
   --blue: #1131d4;
   --card-text-color: black;
+  --glow-button: #ababab;
+  --green-transparent: rgba(17, 212, 69, 0.5);
 }
 
 .dark-mode {
@@ -47,14 +49,14 @@
   --green: #0c912f;
   --blue: #5c75f7;
   --card-text-color: #243746;
+  --glow-button: #ffffff;
+  --green-transparent: rgba(12, 145, 47, 0.5);
 }
 
-/* font-family: 'Jura', sans-serif;
-font-family: 'Play', sans-serif;
+/* font-family: 'Play', sans-serif;
 font-family: 'Righteous', cursive;
 font-family: 'Space Grotesk', sans-serif;
 font-family: 'Tomorrow', sans-serif;
-font-family: 'Stick No Bills', sans-serif;
 
 // IN USE
 font-family: 'Source Code Pro', monospace;
@@ -62,7 +64,15 @@ font-family: 'Chakra Petch', sans-serif;
 font-family: 'Goldman', cursive;
 font-family: 'Varela Round', sans-serif;
 font-family: 'Bungee Hairline', cursive;
-font-family: 'Rajdhani', sans-serif; */
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Stick No Bills', sans-serif;
+font-family: 'Jura', sans-serif; */
+
+.max-dimensions {
+  padding: 50px 30px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 ::-moz-selection {
   /* Code for Firefox */

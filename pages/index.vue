@@ -1,10 +1,120 @@
 <template>
-  <div>
-    <h1>Testing color mode</h1>
-    <p>{{ $t("general.test") }}</p>
+  <div class="landing">
+    <div class="intro max-dimensions">
+      <p class="intro-title">Dry and clean code is my mode !</p>
+    </div>
+    <div class="landing-banner">
+      <div>
+        <p class="intro-more">
+          {{ $t("general.landing.intro.part1") }}
+          <span class="underline">{{ $t("general.landing.intro.part2") }}</span>
+          {{ $t("general.landing.intro.part3") }}
+        </p>
+        <LandingButton link="o-meni" />
+      </div>
+      <component :is="words" class="words" />
+    </div>
+    <LandingSection />
   </div>
 </template>
 
 <script>
-export default {};
+import LandingButton from "../components/LandingButton.vue";
+import LandingSection from "../components/LandingSection.vue";
+import words from "../assets/images/words.svg?inline";
+
+export default {
+  components: {
+    LandingButton,
+    LandingSection,
+    words,
+  },
+  computed: {
+    words() {
+      return words;
+    },
+  },
+};
 </script>
+
+<style lang="scss">
+.landing {
+  overflow: hidden;
+
+  .landing-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 30px 0 30px;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: calc(100vh - 246px);
+
+    svg.words {
+      width: 80%;
+      height: 100%;
+      justify-self: center;
+
+      g {
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+
+  .intro {
+    &.max-dimensions {
+      padding-bottom: 0;
+    }
+    .intro-title {
+      text-align: center;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  p {
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+
+    &.intro-more {
+      font-size: 23px;
+      line-height: 1.6;
+      transition: all 0.5s ease-in-out;
+
+      .underline {
+        border-bottom: 5px solid var(--blue);
+        border-left: 5px solid var(--green);
+        border-radius: 50%;
+        padding: 6px 18px;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .landing {
+    .landing-banner {
+      grid-template-columns: 1fr;
+
+      svg.words {
+        width: 100%;
+        order: -1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing {
+
+    .landing-banner {
+      padding: 50px 0 0 0;
+    }
+
+    .intro {
+      &.max-dimensions {
+        padding: 0;
+      }
+    }
+  }
+}
+</style>
