@@ -1,9 +1,25 @@
 module.exports = {
-    test: "I'm testing the translation",
     header: {
         about: "about",
         projects: "projects",
         contact: "contact"
+    },
+    landing: {
+        intro: {
+            part1: "After almost 9 years of experience as a physics teacher, I decided it was time for a career",
+            part2: "turnaround",
+            part3: "and sought happiness in the IT industry. Curiosity, diligence, and perseverance have led me to where I am today - happy as a programmer."
+        },
+        projects: {
+            title: "PROJECTS",
+            description1: "Where have I been, and what have I been doing?",
+            description2: "See my projects:"
+        },
+        contacts: {
+            title: "CONTACT",
+            description1: "Do you have a question? Comment? A suggestion? Criticism? Praise?",
+            description2: "Find out how to contact me here:"
+        }
     },
     cookie: {
         partOne: "This site",

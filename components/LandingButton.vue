@@ -4,7 +4,7 @@
       <button class="btn-hover">
         <nuxt-link :to="localePath(link)">
           <component :is="moreButton" />
-          <span>VIŠE</span>
+          <span>{{ $t("general.projects.casestudyButton") }}</span>
         </nuxt-link>
       </button>
     </div>
@@ -35,12 +35,14 @@ export default {
 
 <style lang="scss">
 .container {
-  margin: 50px 30px 30px 0;
+  position: relative;
+  height: 160px;
 
   .center {
     width: 180px;
     height: 60px;
     position: absolute;
+    bottom: 53px;
 
     .btn-hover {
       width: 180px;
@@ -73,6 +75,7 @@ export default {
         font-weight: 600;
         font-size: 18px;
         letter-spacing: 8px;
+        transition: all 0.5s ease-in-out;
       }
     }
   }

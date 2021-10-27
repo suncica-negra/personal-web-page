@@ -1,9 +1,25 @@
 module.exports = {
-    test: "Testiram prijevod",
     header: {
         about: "o meni",
         projects: "projekti",
         contact: "kontakt"
+    },
+    landing: {
+        intro: {
+            part1: "Nakon skoro 9 godina iskustva u struci (nastavnica fizike) odlučila sam da je vrijeme za",
+            part2: "preokret",
+            part3: "u karijeri i potražila sreću u IT industriji. Znatiželja, marljivost i upornost su me doveli do toga gdje sam danas - sretna na radnom mjestu programera."
+        },
+        projects: {
+            title: "PROJEKTI",
+            description1: "Gdje sam bila i što sam radila?",
+            description2: "Škicnite u moje projekte:"
+        },
+        contacts: {
+            title: "KONTAKT",
+            description1: "Imate pitanje? Komentar? Sugestiju? Kritiku? Pohvalu?",
+            description2: "Ovdje saznajte kako me kontaktirati:"
+        }
     },
     cookie: {
         partOne: "Ova stranica",
