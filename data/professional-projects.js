@@ -4,7 +4,7 @@ export const professionalProjects = [
         imageSrc: "forfend.png",
         imageOrder: "second",
         textOrder: "first",
-        dates: "28.09.2021. - 01.10.2021.",
+        dates: "28.09.2021. - 13.10.2021.",
         images: ["graphql", "react", "css3"],
         casestudy: "",
         web: "http://forfendhealth.com"
