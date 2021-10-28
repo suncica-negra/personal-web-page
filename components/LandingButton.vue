@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="center">
-      <button class="btn-hover">
+      <button class="btn-hover transition">
         <nuxt-link :to="localePath(link)">
           <component :is="moreButton" />
           <span>{{ $t("general.projects.casestudyButton") }}</span>
@@ -51,7 +51,6 @@ export default {
       background: transparent;
       border: 1px solid #91c9ff;
       outline: none;
-      transition: all 0.5s ease-in-out;
       border-radius: 5px;
 
       svg {
@@ -62,7 +61,6 @@ export default {
         stroke: var(--glow-button);
         stroke-dasharray: 150 480;
         stroke-dashoffset: 150;
-        transition: all 0.5s ease-in-out;
       }
 
       &:hover svg {

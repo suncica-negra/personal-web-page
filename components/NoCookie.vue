@@ -109,6 +109,7 @@
                 />
                 <path
                   style="fill: var(--cookie)"
+                  class="transition"
                   d="M416.97,206.596l-0.013-0.831c-0.064-5.279-4.222-9.598-9.494-9.864c-14.875-0.751-28.007-9.639-34.27-23.193
           c-1.245-2.694-3.623-4.696-6.489-5.465c-2.867-0.769-5.927-0.224-8.353,1.487c-6.706,4.73-14.927,7.335-23.146,7.336
           c-6.964,0-13.857-1.854-19.935-5.363c-13.458-7.77-21.242-22.803-19.83-38.299c0.269-2.956-0.789-5.879-2.888-7.977
@@ -140,25 +141,10 @@
                 />
               </g>
             </g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
           </svg>
         </div>
         <div class="box-2">
-          <div class="close btn-two" @click="broughtToMind">
+          <div class="close btn-two transition" @click="broughtToMind">
             <span>CLOSE</span>
           </div>
         </div>
@@ -239,7 +225,6 @@ export default {
 
       .btn-two {
         color: var(--cookie);
-        transition: all 0.5s ease-in-out;
         position: relative;
       }
 

@@ -14,6 +14,7 @@
     version="1.1"
     inkscape:version="0.47 r22583"
     viewBox="0 0 9.9513184 10.159361"
+    class="transition"
   >
   <defs
       id="defs2898"

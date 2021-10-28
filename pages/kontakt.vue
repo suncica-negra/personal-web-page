@@ -1,6 +1,6 @@
 <template>
   <div class="contact max-dimensions">
-    <h1>{{ $t("general.contact.title") }}</h1>
+    <h1 class="transition">{{ $t("general.contact.title") }}</h1>
     <TrapdoorButton />
   </div>
 </template>
@@ -17,9 +17,5 @@ export default {
 <style lang="scss">
 .contact {
   padding: 50px 30px;
-
-  h1 {
-    transition: all 0.5s ease-in-out;
-  }
 }
 </style>

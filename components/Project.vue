@@ -1,5 +1,5 @@
 <template>
-  <div class="private-projects">
+  <div class="private-projects transition">
     <div :class="project.imageOrder" class="image-width">
       <img
         :src="require(`~/assets/images/${project.imageSrc}`)"
@@ -23,7 +23,7 @@
           v-if="project.code !== undefined && project.code !== ''"
           :href="`${project.code}`"
           target="_blank"
-          ><button class="glow-on-hover" type="button">
+          ><button class="glow-on-hover transition" type="button">
             <code>{{ $t("general.projects.codeButton") }}</code>
             <span class="material-icons-outlined">code</span>
           </button></a
@@ -32,13 +32,13 @@
           v-if="project.casestudy !== undefined && project.casestudy !== ''"
           :href="`${project.casestudy}`"
           target="_blank"
-          ><button class="glow-on-hover" type="button">
+          ><button class="glow-on-hover transition" type="button">
             <code>{{ $t("general.projects.casestudyButton") }}</code>
             <span class="material-icons-outlined">code</span>
           </button></a
         >
         <a :href="`${project.web}`" target="_blank"
-          ><button class="glow-on-hover" type="button">
+          ><button class="glow-on-hover transition" type="button">
             <code>{{ $t("general.projects.webButton") }}</code>
             <span class="material-icons-outlined">web</span>
           </button></a
@@ -71,7 +71,6 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
-  transition: all 0.5s ease-in-out;
   padding: 20px;
 
   &:hover {
@@ -123,7 +122,6 @@ export default {
     display: flex;
     align-items: center;
     padding: 0 15px;
-    transition: all 0.5s ease-in-out;
 
     &:before {
       content: "";

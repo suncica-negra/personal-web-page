@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li v-for="color of colors" :key="color">
+      <li v-for="color of colors" :key="color" class="transition">
         <component
           :is="`icon-${color}`"
           @click="$colorMode.preference = color"
@@ -56,7 +56,6 @@ li {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  transition: all 0.5s ease-in-out;
 
   &:nth-child(1) {
     visibility: hidden;

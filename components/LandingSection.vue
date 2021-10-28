@@ -6,7 +6,7 @@
       :offset="0.3"
     >
       <div v-for="(section, index) in sections" :key="index">
-        <div class="section" :class="section.class">
+        <div class="section transition" :class="section.class">
           <div class="max-dimensions">
             <div v-if="section.project">
               <transition
@@ -139,7 +139,6 @@ export default {
   min-height: 100vh;
   background-color: var(--box-shadow-rewerse);
   position: relative;
-  transition: all 0.5s ease-in-out;
 
   &.contacts {
     background-color: transparent;

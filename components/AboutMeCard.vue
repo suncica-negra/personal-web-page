@@ -1,6 +1,6 @@
 <template>
   <div class="about-me-card">
-    <div class="about-me-card-holder">
+    <div class="about-me-card-holder transition">
       <span v-if="card.job" class="picture-desc"
         ><span class="material-icons-outlined">work</span>
         <p>{{ $t("general.about.timeline." + card.job) }}</p></span
@@ -27,7 +27,7 @@
         ><span class="material-icons-outlined">update</span
         >{{ $t("general.about.timeline." + card.date) }}</span
       >
-      <span v-if="card.details" class="slide" :class="{ down: slideDown }">
+      <span v-if="card.details" class="slide transition" :class="{ down: slideDown }">
         <span v-for="(detail, i) in card.details" :key="i" class="informal">
           <span v-if="detail.courseName" class="picture-desc">
             <span class="desc-wrapper"
@@ -49,13 +49,13 @@
       <div
         @click="slideDown = !slideDown"
         v-if="card.details"
-        class="open"
+        class="open transition"
         :class="{ rotate: !slideDown }"
       >
         <CloseButton />
       </div>
-      <span class="circle"></span>
-      <span class="circle ping"></span>
+      <span class="circle transition"></span>
+      <span class="circle ping transition"></span>
     </div>
   </div>
 </template>
@@ -163,7 +163,6 @@ export default {
     margin-right: 27px;
     filter: drop-shadow(0px 0px 10px var(--box-shadow-less-transparent));
     color: var(--card-text-color);
-    transition: all 0.5s ease-in-out;
 
     &:after {
       background-color: #d5c19c;
@@ -180,7 +179,6 @@ export default {
     .slide {
       max-height: 0;
       opacity: 0;
-      transition: all 0.5s ease-in-out;
 
       &.down {
         max-height: 2000px;
@@ -193,7 +191,6 @@ export default {
       z-index: 1;
       display: flex;
       align-self: flex-end;
-      transition: all 0.5s ease-in-out;
       border-radius: 50%;
       padding: 5px;
       margin-top: 10px;
@@ -207,7 +204,6 @@ export default {
       }
 
       svg {
-        transition: all 0.5s ease-in-out;
         fill: var(--card-text-color);
       }
     }
@@ -222,7 +218,6 @@ export default {
       right: -40px;
       top: calc(50% - 12px);
       z-index: 100;
-      transition: all 0.5s ease-in-out;
 
       &.ping {
         background-color: var(--box-shadow);

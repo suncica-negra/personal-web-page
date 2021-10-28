@@ -60,13 +60,11 @@ export default {
 
     .letter {
       fill: var(--color);
-      transition: all 0.5s ease-in-out;
     }
 
     #original-wordmark-express {
       path {
         fill: var(--color);
-        transition: all 0.5s ease-in-out;
       }
     }
   }

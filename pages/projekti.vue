@@ -1,6 +1,6 @@
 <template>
   <div :onscroll="onScroll" class="projects max-dimensions">
-    <h1 class="project-title">
+    <h1 class="project-title transition">
       {{ $t("general.projects.title") }}
       <span class="material-icons-outlined">code</span>
     </h1>
@@ -15,7 +15,7 @@
             <p class="golden-text-color">{{ $t("general.projects.tabOne") }}</p>
           </div>
           <div
-            class="private"
+            class="private transition"
             :class="{ active: active == 2 }"
             @click="toggleActive(2)"
           >
@@ -26,7 +26,7 @@
       </div>
       <div class="tabs">
         <div v-if="active == 1" class="tab">
-          <p class="subtitle">{{ $t("general.projects.tabOneTitle") }}</p>
+          <p class="subtitle transition">{{ $t("general.projects.tabOneTitle") }}</p>
           <Project
             v-for="(project, i) in professionalProjects"
             :key="i"
@@ -34,7 +34,7 @@
           />
         </div>
         <div v-if="active == 2" class="tab">
-          <p class="subtitle">{{ $t("general.projects.tabTwoTitle") }}</p>
+          <p class="subtitle transition">{{ $t("general.projects.tabTwoTitle") }}</p>
           <Project
             v-for="(project, i) in myProjects"
             :key="i"
@@ -102,7 +102,6 @@ export default {
 .project-title {
   display: flex;
   align-items: center;
-  transition: all 0.5s ease-in-out;
 
   span {
     font-size: 50px;
@@ -134,7 +133,6 @@ export default {
       border-top-left-radius: 20px;
       box-shadow: inset -7px 0px 21px -8px var(--box-shadow-transparent),
         inset 16px 0px 12px -8px var(--box-shadow-transparent);
-      transition: all 0.5s ease-in-out;
       position: relative;
       opacity: 0.5;
 
@@ -176,7 +174,6 @@ export default {
         font-family: "Goldman", cursive;
         font-size: 20px;
         line-height: 1.5;
-        transition: all 0.5s ease-in-out;
       }
     }
   }

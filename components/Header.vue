@@ -4,23 +4,23 @@
       <div class="header-holder">
         <div class="header-wrapper">
           <span>
-            <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
+            <nuxt-link class="btn btn-4 logo transition" :to="localePath('/')">
               <span><img class="me" src="@/assets/images/me.jpg" /></span>
             </nuxt-link>
             <nuxt-link
-              class="btn btn-4 text"
+              class="btn btn-4 text transition"
               :to="localePath('/o-meni')"
             >
               {{ $t("general.header.about") }}
             </nuxt-link>
             <nuxt-link
-              class="btn btn-4 text"
+              class="btn btn-4 text transition"
               :to="localePath('/projekti')"
             >
               {{ $t("general.header.projects") }}
             </nuxt-link>
             <nuxt-link
-              class="btn btn-4 text"
+              class="btn btn-4 text transition"
               :to="localePath('/kontakt')"
             >
               {{ $t("general.header.contact") }}
@@ -39,8 +39,8 @@
         <span></span>
         <span></span>
         <span></span>
-        <div id="menu">
-          <div class="background" :class="{ active: dropdown }" />
+        <div id="menu" class="transition">
+          <div class="background transition" :class="{ active: dropdown }" />
         </div>
       </div>
     </div>
@@ -50,14 +50,14 @@
         leave-active-class="slide-top"
       >
         <div v-if="dropdown" class="dropdown-menu">
-          <nuxt-link class="btn btn-4 logo" :to="localePath('/')">
+          <nuxt-link class="btn btn-4 logo transition" :to="localePath('/')">
             <span @click="closeDropdown"
               ><img class="me" src="@/assets/images/me.jpg"
             /></span>
           </nuxt-link>
           <span @click="closeDropdown"
             ><nuxt-link
-              class="btn btn-4 text golden-text-color"
+              class="btn btn-4 text golden-text-color transition"
               :to="localePath('/o-meni')"
             >
               {{ $t("general.header.about") }}
@@ -65,7 +65,7 @@
           >
           <span @click="closeDropdown"
             ><nuxt-link
-              class="btn btn-4 text golden-text-color"
+              class="btn btn-4 text golden-text-color transition"
               :to="localePath('/projekti')"
             >
               {{ $t("general.header.projects") }}
@@ -73,7 +73,7 @@
           >
           <span @click="closeDropdown"
             ><nuxt-link
-              class="btn btn-4 text golden-text-color"
+              class="btn btn-4 text golden-text-color transition"
               :to="localePath('/kontakt')"
             >
               {{ $t("general.header.contact") }}
@@ -150,7 +150,6 @@ export default {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  transition: all 0.5s ease-in-out;
 
   &.logo {
     margin-right: 20px;
@@ -280,7 +279,6 @@ export default {
 
   #menu {
     position: absolute;
-    transition: all 0.5s ease-in-out;
   }
 
   #menu a {
@@ -301,7 +299,6 @@ export default {
     bottom: -8px;
     right: -41px;
     width: 47px;
-    transition: all 0.5s ease-in-out;
 
     &.active {
       transform: scale(14);

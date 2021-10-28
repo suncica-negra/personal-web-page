@@ -1,10 +1,10 @@
 <template>
   <div class="about max-dimensions">
-    <h1 class="about-me-title">
+    <h1 class="about-me-title transition">
       <span class="material-icons-outlined">perm_identity</span>
       {{ $t("general.about.title") }}
     </h1>
-    <div class="hoby">
+    <div class="hoby transition">
       <p>{{ $t("general.about.hoby.title") }}:</p>
       <p>
         {{ $t("general.about.hoby.run") }}
@@ -33,11 +33,11 @@
       </p>
     </div>
     <GoToTopButton :offsetTop="offsetTop" />
-    <p class="time">{{ $t("general.about.today") }}</p>
+    <p class="time transition">{{ $t("general.about.today") }}</p>
     <div class="cards">
       <AboutMeCard v-for="(card, i) in aboutMe" :key="i" :card="card" />
     </div>
-    <p class="time">{{ $t("general.about.past") }}</p>
+    <p class="time transition">{{ $t("general.about.past") }}</p>
   </div>
 </template>
 
@@ -89,7 +89,6 @@ export default {
 .about-me-title {
   display: flex;
   align-items: center;
-  transition: all 0.5s ease-in-out;
 
   span {
     font-size: 50px;
@@ -102,7 +101,6 @@ export default {
   font-family: "Bungee Hairline", cursive;
   font-weight: 600;
   font-size: 16px;
-  transition: all 0.5s ease-in-out;
 }
 
 .cards {
@@ -135,7 +133,6 @@ export default {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  transition: all 0.5s ease-in-out;
 
   p {
     font-family: "Stick No Bills", sans-serif;

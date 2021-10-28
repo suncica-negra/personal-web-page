@@ -17,13 +17,16 @@
 		style="fill: var(--bg)"
 		width="384"
 		height="384"
+		class="transition"
 	/>
 	<polygon
 		style="fill: var(--bg)"
 		points="256,296.384 448,448 448,148.672 "
+		class="transition"
 	/>
 	<path
 		style="fill: #f14336"
+		class="transition"
 		d="M464,64h-16L256,215.616L64,64H48C21.504,64,0,85.504,0,112v288c0,26.496,21.504,48,48,48h16V148.672
 	l192,147.68L448,148.64V448h16c26.496,0,48-21.504,48-48V112C512,85.504,490.496,64,464,64z"
 	/></svg

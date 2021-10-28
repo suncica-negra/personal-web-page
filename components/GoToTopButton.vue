@@ -3,7 +3,7 @@
     enter-active-class="scale-in-bl"
     leave-active-class="scale-out-bl"
   >
-    <div id="back-to-top" v-if="offsetTop > 700" v-scroll-to="'#body'">
+    <div id="back-to-top" class="transition" v-if="offsetTop > 700" v-scroll-to="'#body'">
       <span class="material-icons-outlined">keyboard_double_arrow_up</span>
       <p>{{ $t("general.projects.toTop") }}</p>
     </div>
@@ -32,7 +32,6 @@ export default {
   border-radius: 50%;
   padding: 9px 15px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
   z-index: 1;
   text-align: center;
 

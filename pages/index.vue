@@ -1,13 +1,13 @@
 <template>
   <div class="landing">
     <div class="intro max-dimensions">
-      <p class="intro-title">Dry and clean code is my mode !</p>
+      <p class="intro-title transition">Dry and clean code is my mode !</p>
     </div>
     <div class="landing-banner">
       <div>
-        <p class="intro-more">
+        <p class="intro-more transition">
           {{ $t("general.landing.intro.part1") }}
-          <span class="underline">{{ $t("general.landing.intro.part2") }}</span>
+          <span class="underline transition">{{ $t("general.landing.intro.part2") }}</span>
           {{ $t("general.landing.intro.part3") }}
         </p>
         <LandingButton link="o-meni" />
@@ -53,10 +53,6 @@ export default {
       width: 80%;
       height: 100%;
       justify-self: center;
-
-      g {
-        transition: all 0.5s ease-in-out;
-      }
     }
   }
 
@@ -66,7 +62,6 @@ export default {
     }
     .intro-title {
       text-align: center;
-      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -77,14 +72,12 @@ export default {
     &.intro-more {
       font-size: 23px;
       line-height: 1.6;
-      transition: all 0.5s ease-in-out;
 
       .underline {
         border-bottom: 5px solid var(--blue);
         border-left: 5px solid var(--green);
         border-radius: 50%;
         padding: 6px 18px;
-        transition: all 0.5s ease-in-out;
       }
     }
   }

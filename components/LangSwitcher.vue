@@ -4,14 +4,16 @@
       <nuxt-link
         :class="[language === 'hr' && 'active', 'locale-link']"
         :to="switchLocalePath('hr')"
+        class="transition"
       >
-        <img class="cro" src="@/assets/images/cro-lang.png" />
+        <img class="cro transition" src="@/assets/images/cro-lang.png" />
       </nuxt-link>
     </span>
     <span @click="() => handleClick('en')">
       <nuxt-link
         :class="[language === 'en' && 'active', 'locale-link']"
         :to="switchLocalePath('en')"
+        class="transition"
       >
         <EngLang />
       </nuxt-link>
@@ -60,7 +62,6 @@ export default {
   svg,
   .cro {
     border-radius: 50%;
-    transition: all 0.5s ease-in-out;
   }
 
   .cro {
@@ -73,7 +74,6 @@ export default {
 
 .locale-link {
   opacity: 0.4;
-  transition: all 0.5s ease-in-out;
 }
 
 .nuxt-link-exact-active {
