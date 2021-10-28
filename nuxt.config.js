@@ -9,7 +9,16 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Dry and clean code is my mode!'
+      },
+      { hid: 'og:title', property: 'og:title', content: 'Personal Web Page | Dea K' },
+      { hid: 'og:description', property: 'og:description', content: 'Dry and clean code is my mode!' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Personal Web Page | Dea K' },
+      { hid: 'og:type', property: 'og:type', content: 'website' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/small-icon.png' },
