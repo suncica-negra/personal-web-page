@@ -1,7 +1,7 @@
 export const professionalProjects = [
     {
         name: "forfend",
-        imageSrc: "nophoto.svg",
+        imageSrc: "forfend.png",
         imageOrder: "second",
         textOrder: "first",
         dates: "28.09.2021. - 01.10.2021.",

@@ -1,7 +1,7 @@
 export const myProjects = [
     {
         name: "myweb",
-        imageSrc: "nophoto.svg",
+        imageSrc: "my-webpage.png",
         imageOrder: "second",
         textOrder: "first",
         dates: "04.08.2021.",
