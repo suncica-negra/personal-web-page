@@ -456,6 +456,10 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
       margin-bottom: 18px;
     }
 
+    li {
+      display: flex;
+    }
+
     li:nth-child(2) {
       margin-bottom: 18px;
     }
