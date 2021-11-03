@@ -43,7 +43,7 @@ module.exports = {
         tabOne: "Profesionalni projekti",
         tabTwo: "Privatni projekti",
         tabOneTitle: "Ovdje su projekti na kojima sam radila (ili još uvijek radim) nakon zaposlenja kao programer. Na njima radim u timu s kolegama.",
-        tabTwoTitle: "Dolje su navedeni projekti koje sam radila sama. Prikazani su na način da su izlistani od najnovijeg prema najstarijem, tj. prvi moj projekt je na samom dnu stranice, a zadnji je odmah ispod ovog teksta.",
+        tabTwoTitle: "Dolje su navedeni projekti koje sam radila sama. Prikaz je od najnovijeg do najstarijeg.",
         codeButton: "Vidi kod",
         casestudyButton: "Više",
         webButton: "web",

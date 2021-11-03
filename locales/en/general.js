@@ -8,7 +8,7 @@ module.exports = {
         intro: {
             part1: "After almost 9 years of experience as a physics teacher, I decided it was time for a career",
             part2: "turnaround",
-            part3: "and sought happiness in the IT industry. Curiosity, diligence, and perseverance have led me to where I am today - happy as a programmer."
+            part3: "and sought happiness in the IT industry. Curiosity, diligence, and perseverance have led me to where I am today - a happy programmer."
         },
         projects: {
             title: "PROJECTS",
@@ -17,7 +17,7 @@ module.exports = {
         },
         contacts: {
             title: "CONTACT",
-            description1: "Do you have a question? Comment? A suggestion? Criticism? Praise?",
+            description1: "You have a question? Comment? A suggestion? Criticism? Compliment?",
             description2: "Find out how to contact me here:"
         }
     },
@@ -43,7 +43,7 @@ module.exports = {
         tabOne: "Professional projects",
         tabTwo: "Private projects",
         tabOneTitle: "Here are the projects I worked on (or am still working on) after getting a job in IT as a programmer. I work on these projects with teammates.",
-        tabTwoTitle: "Listed below are projects I have done myself. They are presented in such a way that they are listed from the newest to the oldest. My first project is at the very bottom of the page, and the last one is just below this text.",
+        tabTwoTitle: "Listed below are projects I have done myself. They are listed from the newest to the oldest. My first project is at the very bottom of the page, and the last one is just below this text.",
         codeButton: "Code",
         casestudyButton: "More",
         webButton: "www",
