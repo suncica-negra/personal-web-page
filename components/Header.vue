@@ -476,4 +476,8 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
     }
   }
 }
+
+.mobile-only .lang-switcher-wrapper span {
+  margin-right: unset;
+}
 </style>
