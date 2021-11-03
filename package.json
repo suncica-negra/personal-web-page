@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=production --cleanup"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^2.0.10",
@@ -20,5 +21,7 @@
     "vue-scrollama": "^2.0.6",
     "vue-scrollto": "^2.20.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
 }

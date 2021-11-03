@@ -42,7 +42,7 @@ export default {
   buildModules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/svg'
-    ],
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -82,5 +82,13 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  router: {
+    base: '/personal-web-page/'
+  },
+  robots: {
+    Sitemap: 'https://suncica-negra.github.io/personal-web-page/sitemap.xml',
+    UserAgent: '*',
+    Disallow: ''
+  },
 }
