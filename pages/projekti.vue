@@ -112,7 +112,7 @@ export default {
 .projects-holder {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 150px 1fr;
   min-height: 227px;
 
   .projects-menu-wrapper {
@@ -135,6 +135,9 @@ export default {
         inset 16px 0px 12px -8px var(--box-shadow-transparent);
       position: relative;
       opacity: 0.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         opacity: 1;
@@ -149,11 +152,6 @@ export default {
 
       & p {
         margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
         font-family: "Chakra Petch", sans-serif;
         font-size: 20px;
         font-weight: 700;
