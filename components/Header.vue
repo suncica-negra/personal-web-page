@@ -35,7 +35,12 @@
     </div>
     <div class="mobile-only">
       <div class="custom">
-        <input id="input-burger" type="checkbox" @click="handleDropdown" autocomplete="off" />
+        <input
+          id="input-burger"
+          type="checkbox"
+          @click="handleDropdown"
+          autocomplete="off"
+        />
         <span></span>
         <span></span>
         <span></span>
@@ -445,7 +450,7 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
 
   .lang-switcher-wrapper,
   ul {
-    display: unset;
+    display: grid;
 
     .cro {
       margin-bottom: 18px;
@@ -477,7 +482,14 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
   }
 }
 
-.mobile-only .lang-switcher-wrapper span {
-  margin-right: unset;
+.mobile-only {
+  .lang-switcher-wrapper span {
+    margin-right: unset;
+    margin-bottom: 18px;
+  }
+  .lang-switcher-wrapper,
+  li {
+    margin-bottom: 18px;
+  }
 }
 </style>
