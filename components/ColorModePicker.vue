@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="color-mode-picker">
     <ul>
       <li v-for="color of colors" :key="color" class="transition">
         <component
@@ -43,36 +43,38 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-ul {
-  display: flex;
-  margin-right: 10px;
-}
-
-li {
-  background-color: #d3d6db;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-
-  &:nth-child(1) {
-    visibility: hidden;
-  }
-
-  &:nth-child(2) {
+<style lang="scss">
+.color-mode-picker {
+  ul {
+    display: flex;
     margin-right: 10px;
   }
 
-  &:hover {
-    box-shadow: 0 0 15px #d3d6db;
-    transform: scale(1.1);
-  }
-}
+  li {
+    background-color: #d3d6db;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
 
-svg {
-  width: 30px;
-  cursor: pointer;
+    &:nth-child(1) {
+      visibility: hidden;
+    }
+
+    &:nth-child(2) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 15px #d3d6db;
+      transform: scale(1.1);
+    }
+  }
+
+  svg {
+    width: 30px;
+    cursor: pointer;
+  }
 }
 </style>
