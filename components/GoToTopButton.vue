@@ -3,7 +3,12 @@
     enter-active-class="scale-in-bl"
     leave-active-class="scale-out-bl"
   >
-    <div id="back-to-top" class="transition" v-if="offsetTop > 700" v-scroll-to="'#body'">
+    <div
+      id="back-to-top"
+      class="transition"
+      v-if="offsetTop > 700"
+      v-scroll-to="'#body'"
+    >
       <span class="material-icons-outlined">keyboard_double_arrow_up</span>
       <p>{{ $t("general.projects.toTop") }}</p>
     </div>
@@ -30,10 +35,15 @@ export default {
   left: 30px;
   box-shadow: inset -7px 0 39px -7px var(--box-shadow-transparent);
   border-radius: 50%;
-  padding: 9px 15px;
   cursor: pointer;
   z-index: 1;
   text-align: center;
+  width: 92px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   p {
     font-family: "Bungee Hairline", cursive;
@@ -49,7 +59,8 @@ export default {
     left: 25px;
     box-shadow: inset -7px 0 39px -7px var(--box-shadow-transparent);
     background-color: var(--bg-transparent);
-    padding: 19px 21px;
+    width: 73px;
+    height: 73px;
 
     p {
       display: none;

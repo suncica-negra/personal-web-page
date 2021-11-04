@@ -97,7 +97,7 @@ export default {
 }
 
 .time {
-  text-align-last: center;
+  text-align: center;
   font-family: "Bungee Hairline", cursive;
   font-weight: 600;
   font-size: 16px;
