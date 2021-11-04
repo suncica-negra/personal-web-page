@@ -483,6 +483,14 @@ html.dark-mode .mobile-only .btn.btn-4.text:after {
 }
 
 .mobile-only {
+  .color-lang {
+    .color-mode-picker {
+      ul {
+        display: grid !important;
+      }
+    }
+  }
+
   .lang-switcher-wrapper span {
     margin-right: unset;
     margin-bottom: 18px;
