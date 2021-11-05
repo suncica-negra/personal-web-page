@@ -7,10 +7,33 @@
       <div>
         <p class="intro-more transition">
           {{ $t("general.landing.intro.part1") }}
-          <span class="underline transition">{{ $t("general.landing.intro.part2") }}</span>
+          <span class="underline transition">{{
+            $t("general.landing.intro.part2")
+          }}</span>
           {{ $t("general.landing.intro.part3") }}
         </p>
         <LandingButton link="o-meni" />
+        <div class="hero-socials-link">
+          <span class="material-icons">share</span>
+          <a
+            href="https://www.linkedin.com/shareArticle?mini=true&url=https://suncica-negra.github.io/personal-web-page/"
+            target="_blank"
+          >
+            <component :is="linkedin" />
+          </a>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://suncica-negra.github.io/personal-web-page/"
+            target="_blank"
+          >
+            <component :is="facebook" />
+          </a>
+          <a
+            href="https://twitter.com/intent/tweet?url=https://suncica-negra.github.io/personal-web-page/"
+            target="_blank"
+          >
+            <component :is="twitter" />
+          </a>
+        </div>
       </div>
       <component :is="words" class="words" />
     </div>
@@ -22,16 +45,31 @@
 import LandingButton from "../components/LandingButton.vue";
 import LandingSection from "../components/LandingSection.vue";
 import words from "../assets/images/words.svg?inline";
+import linkedin from "../assets/images/linkedin.svg?inline";
+import facebook from "../assets/images/facebook.svg?inline";
+import twitter from "../assets/images/twitter.svg?inline";
 
 export default {
   components: {
     LandingButton,
     LandingSection,
     words,
+    linkedin,
+    facebook,
+    twitter,
   },
   computed: {
     words() {
       return words;
+    },
+    linkedin() {
+      return linkedin;
+    },
+    facebook() {
+      return facebook;
+    },
+    twitter() {
+      return twitter;
     },
   },
 };
@@ -53,6 +91,13 @@ export default {
       width: 80%;
       height: 100%;
       justify-self: center;
+    }
+
+    .hero-socials-link {
+      display: flex;
+      max-width: 180px;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -98,7 +143,6 @@ export default {
 
 @media screen and (max-width: 500px) {
   .landing {
-
     .landing-banner {
       padding: 50px 0 0 0;
     }
