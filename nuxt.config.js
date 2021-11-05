@@ -21,7 +21,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/small-icon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
