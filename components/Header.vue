@@ -144,6 +144,7 @@ export default {
 
 .me {
   width: 70px;
+  height: 70px;
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
@@ -155,6 +156,7 @@ export default {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  white-space: nowrap;
 
   &.logo {
     margin-right: 20px;
