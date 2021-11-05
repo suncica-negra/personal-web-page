@@ -82,20 +82,6 @@ export default {
       animation: pulse 1s infinite;
       transition: 0.3s ease-in-out;
     }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-
-      70% {
-        transform: scale(1.1);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
   }
 
   .copy {
@@ -104,6 +90,20 @@ export default {
     font-size: 13px;
     padding-bottom: 20px;
     color: var(--copy);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 </style>

@@ -33,6 +33,13 @@
           >
             <component :is="twitter" />
           </a>
+          <a
+            href="https://api.whatsapp.com/send?text=https://suncica-negra.github.io/personal-web-page/"
+            target="_blank"
+            data-action="share/whatsapp/share"
+          >
+            <component :is="whatsapp" />
+          </a>
         </div>
       </div>
       <component :is="words" class="words" />
@@ -48,6 +55,7 @@ import words from "../assets/images/words.svg?inline";
 import linkedin from "../assets/images/linkedin.svg?inline";
 import facebook from "../assets/images/facebook.svg?inline";
 import twitter from "../assets/images/twitter.svg?inline";
+import whatsapp from "../assets/images/whatsapp.svg?inline";
 
 export default {
   components: {
@@ -57,6 +65,7 @@ export default {
     linkedin,
     facebook,
     twitter,
+    whatsapp,
   },
   computed: {
     words() {
@@ -70,6 +79,9 @@ export default {
     },
     twitter() {
       return twitter;
+    },
+    whatsapp() {
+      return whatsapp;
     },
   },
 };
@@ -98,6 +110,11 @@ export default {
       max-width: 180px;
       justify-content: space-between;
       align-items: center;
+
+      a:hover {
+        animation: pulse 1s infinite;
+        transition: 0.3s ease-in-out;
+      }
     }
   }
 
