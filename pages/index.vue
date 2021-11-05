@@ -14,7 +14,7 @@
         </p>
         <LandingButton link="o-meni" />
         <div class="hero-socials-link">
-          <span class="material-icons">share</span>
+          <span class="material-icons transition">share</span>
           <a
             href="https://www.linkedin.com/shareArticle?mini=true&url=https://suncica-negra.github.io/personal-web-page/"
             target="_blank"

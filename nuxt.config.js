@@ -79,7 +79,10 @@ export default {
       container: "body"
     }],
   ],
-
+  colorMode: {
+    preference: 'dark', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
