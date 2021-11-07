@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Chakra+Petch:wght@300;400;500;600;700&family=Goldman:wght@400;700&family=Jura:wght@300;400;500;700&family=Play:wght@400;700&family=Rajdhani:wght@300;400;500;700&family=Righteous&family=Source+Code+Pro:wght@200;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Tomorrow:wght@100;300;400;500;700&family=Varela+Round&family=Stick+No+Bills:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Chakra+Petch:wght@300;400;500;600;700&family=Goldman:wght@400;700&family=Jura:wght@300;400;500;700&family=Rajdhani:wght@300;400;500;700&family=Source+Code+Pro:wght@200;300;400;700&family=Varela+Round&family=Stick+No+Bills:wght@300;400;700&display=swap");
 
 :root {
   --color: #243746;
@@ -52,21 +52,6 @@
   --glow-button: #ffffff;
   --green-transparent: rgba(12, 145, 47, 0.5);
 }
-
-/* font-family: 'Play', sans-serif;
-font-family: 'Righteous', cursive;
-font-family: 'Space Grotesk', sans-serif;
-font-family: 'Tomorrow', sans-serif;
-
-// IN USE
-font-family: 'Source Code Pro', monospace;
-font-family: 'Chakra Petch', sans-serif;
-font-family: 'Goldman', cursive;
-font-family: 'Varela Round', sans-serif;
-font-family: 'Bungee Hairline', cursive;
-font-family: 'Rajdhani', sans-serif;
-font-family: 'Stick No Bills', sans-serif;
-font-family: 'Jura', sans-serif; */
 
 .max-dimensions {
   padding: 50px 30px;
