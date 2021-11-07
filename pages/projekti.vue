@@ -25,7 +25,7 @@
         <GoToTopButton :offsetTop="offsetTop" />
       </div>
       <div class="tabs">
-        <div v-if="active == 1" class="tab">
+        <div v-show="active == 1" class="tab">
           <p class="subtitle transition">{{ $t("general.projects.tabOneTitle") }}</p>
           <Project
             v-for="(project, i) in professionalProjects"
@@ -33,7 +33,7 @@
             :project="project"
           />
         </div>
-        <div v-if="active == 2" class="tab">
+        <div v-show="active == 2" class="tab">
           <p class="subtitle transition">{{ $t("general.projects.tabTwoTitle") }}</p>
           <Project
             v-for="(project, i) in myProjects"
