@@ -92,18 +92,4 @@ export default {
     color: var(--copy);
   }
 }
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  70% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 </style>

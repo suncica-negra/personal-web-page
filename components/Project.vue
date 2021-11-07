@@ -184,18 +184,6 @@ export default {
       letter-spacing: 3px;
       font-weight: 600;
     }
-
-    @keyframes glowing {
-      0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 400% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
-    }
   }
 
   .text-width {
