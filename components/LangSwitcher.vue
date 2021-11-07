@@ -15,19 +15,19 @@
         :to="switchLocalePath('en')"
         class="transition"
       >
-        <EngLang />
+        <component :is="englang" />
       </nuxt-link>
     </span>
   </div>
 </template>
 
 <script>
-import EngLang from "./svg-image-templates/EngLang.vue";
+import englang from "../assets/images/englang.svg?inline";
 
 export default {
   name: "LangSwitcher",
   components: {
-    EngLang,
+    englang,
   },
   data() {
     return {
@@ -36,6 +36,11 @@ export default {
           ? "hr"
           : this.$route.path.split("/")[1],
     };
+  },
+  computed: {
+    englang() {
+      return englang;
+    },
   },
   methods: {
     handleClick(lang) {
