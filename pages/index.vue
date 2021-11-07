@@ -110,6 +110,7 @@ export default {
       max-width: 180px;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 50px;
 
       a:hover {
         animation: pulse 1s infinite;
