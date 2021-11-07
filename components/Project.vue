@@ -1,9 +1,12 @@
 <template>
   <div class="private-projects transition">
     <div :class="project.imageOrder" class="image-width">
-      <img
-        :src="require(`~/assets/images/${project.imageSrc}`)"
+      <nuxt-img
+        format="webp"
+        :src="`/images/${project.imageSrc}`"
+        sizes="md:100vw lg:232px xl:309px xxl:510"
         :alt="project.name"
+        quality="100"
       />
     </div>
     <div :class="project.textOrder" class="text-width">

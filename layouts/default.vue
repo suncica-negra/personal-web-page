@@ -13,7 +13,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NoCookie from "@/components/NoCookie";
-import ogImage from "../assets/images/my-webpage.png"
+import ogImage from "../static/images/my-webpage.png";
 
 export default {
   components: {
@@ -25,12 +25,12 @@ export default {
     return {
       meta: [
         {
-          hid: 'og:image',
-          property: 'og:image',
+          hid: "og:image",
+          property: "og:image",
           content: ogImage,
-        }
+        },
       ],
-    }
+    };
   },
 };
 </script>

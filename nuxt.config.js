@@ -79,7 +79,20 @@ export default {
       offset: 0,
       container: "body"
     }],
+    '@nuxt/image'
   ],
+  image: {
+    screens: {
+      // xs: 320,
+      // sm: 640,
+      // md: 768,
+      md: 905,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1920,
+      '2xl': 1920
+    },
+  },
   colorMode: {
     preference: 'dark', // default value of $colorMode.preference
     fallback: 'light', // fallback value if not system preference found

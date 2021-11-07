@@ -6,7 +6,15 @@
         :to="switchLocalePath('hr')"
         class="transition"
       >
-        <img class="cro transition" src="@/assets/images/cro-lang.png" />
+        <nuxt-img
+          format="webp"
+          src="/images/cro-lang.png"
+          width="60"
+          height="60"
+          class="cro transition"
+          alt="cro-flag"
+          quality="100"
+        />
       </nuxt-link>
     </span>
     <span @click="() => handleClick('en')">
@@ -76,6 +84,11 @@ export default {
   opacity: 0.4;
   width: 40px;
   height: 40px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .nuxt-link-exact-active {

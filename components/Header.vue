@@ -5,7 +5,17 @@
         <div class="header-wrapper">
           <span>
             <nuxt-link class="btn btn-4 logo transition" :to="localePath('/')">
-              <span><img class="me" src="@/assets/images/me.jpg" /></span>
+              <span>
+                <nuxt-img
+                  format="webp"
+                  src="/images/me.jpg"
+                  width="100"
+                  height="100"
+                  class="me"
+                  alt="me"
+                  quality="100"
+                />
+              </span>
             </nuxt-link>
             <nuxt-link
               class="btn btn-4 text transition"
@@ -56,9 +66,17 @@
       >
         <div v-if="dropdown" class="dropdown-menu">
           <nuxt-link class="btn btn-4 logo transition" :to="localePath('/')">
-            <span @click="closeDropdown"
-              ><img class="me" src="@/assets/images/me.jpg"
-            /></span>
+            <span @click="closeDropdown">
+              <nuxt-img
+                format="webp"
+                src="/images/me.jpg"
+                width="100"
+                height="100"
+                class="me"
+                alt="me"
+                quality="100"
+              />
+            </span>
           </nuxt-link>
           <span @click="closeDropdown"
             ><nuxt-link
