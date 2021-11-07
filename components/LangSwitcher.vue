@@ -59,11 +59,6 @@ export default {
     height: 40px;
   }
 
-  svg {
-    width: 40px;
-    height: 40px;
-  }
-
   svg,
   .cro {
     border-radius: 50%;
@@ -79,6 +74,8 @@ export default {
 
 .locale-link {
   opacity: 0.4;
+  width: 40px;
+  height: 40px;
 }
 
 .nuxt-link-exact-active {
