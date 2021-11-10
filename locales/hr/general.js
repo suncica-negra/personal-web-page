@@ -48,7 +48,7 @@ module.exports = {
         casestudyButton: "Više",
         webButton: "web",
         description: {
-            myweb: "Stranica koju upravo gledate nastala je u želji da pokažem svoje trenutno znanje iz frontend tehnologije, DRY principa kodiranja, pa čak i nešto iz dizajna, ali i kao neka vrsta zamjene za CV. Ovo je moj prvi samostalni projekt nakon zaposlenja u ITu kao programerka. Stranica je dvojezična, korisnik može postaviti svijetlu i tamnu temu ovisno o svojoj želji.",
+            myweb: "Stranica koju upravo gledate nastala je u želji da primjenim svoje trenutno znanje iz frontend tehnologije i DRY principa kodiranja pa čak i nešto iz dizajna, da naučim još poneku novu sitnicu, ali i kao odgovor na pitanje: kakav sam ja to web programer ako nemam vlastitu web stranicu? Ovo je moj prvi samostalni projekt nakon zaposlenja u ITu kao programerka. Stranica je dvojezična, korisnik može postaviti svijetlu i tamnu temu ovisno o svojoj želji.",
             codesnippets: "Web aplikacija s četiri manje aplikacije: konvertira broj iz jedne baze u drugu, formatira broj na način da stavi točku iza željenog broja znamenaka, formatira broj tako da makne zareze iz njega, iz liste gdje su nabrojani članovi više obitelji ispiše rečenicu sa članovima pojedine obitelji.",
             marinda: "Web stranica rađena po XD predlošku kao jedan od testnih zadataka u svrhu zaposlenja. Izrada je trajala 8 sati.",
             adressbook: "Jednostavan, ali funkcionalan web adresar s animiranim komponentama što poboljšava korisničko iskustvo. Svaki korisnik vidi samo svoje kontakte, može ih filtrirati i pretraživati po imenu, prezimenu ili po jednom i drugom. Također može uređivati pojedini konatkt ili ga obrisati.",

@@ -48,7 +48,7 @@ module.exports = {
         casestudyButton: "More",
         webButton: "www",
         description: {
-            myweb: "The page you are currently on was created in a desire to show my current knowledge of frontend technology, DRY coding principles, and even some design, but also as a kind of replacement for a CV. This is my first solo project after working in IT as a programmer. The site is bilingual, the user can set a light and a dark theme depending on their preference.",
+            myweb: "The page you are currently on was created in the desire to apply my current knowledge of frontend technology and DRY coding principles, and even something from design. I also want to learn some new things. One of the reasons for this website is the answer to the question: what kind of web developer am I if I don't have my website? This is my first solo project after getting a programming job. The site is bilingual. The user can set a light and a dark theme.",
             codesnippets: "SPA web app composed of four smaller applications: convert a number from one base to another, formats the number by placing a dot after the desired number of digits, remove commas from a comma-separated number, from the string where the members of several families are listed, print a sentence with the members of each family.",
             marinda: "Website made according to XD template as one of the test tasks for employment purposes. Writing the code took 8 hours.",
             adressbook: "A simple but functional web address book with animated components which enhances the user experience. Each user sees only their contacts, can filter them, and search by name, surname, or both. It can also edit an individual contact or delete it.",
