@@ -4,7 +4,7 @@ export const myProjects = [
         imageSrc: "my-webpage.png",
         imageOrder: "second",
         textOrder: "first",
-        dates: "04.08.2021. - 10.11.2021.",
+        dates: "04.08.2021. - 21.11.2021.",
         images: ["nuxt", "nodejs", "scss"],
         code: "https://github.com/suncica-negra/personal-web-page",
         web: ""

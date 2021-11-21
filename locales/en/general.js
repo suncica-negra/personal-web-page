@@ -113,7 +113,7 @@ module.exports = {
             teacher: "Primary and secondary school physics teacher (13 different schools)",
             teacherDate: "April 2012 - September 2020",
             teacherDescription: "During this period, I worked in primary, secondary, private schools, and hospital schools. I was a replacement for absent teachers, and something was on an indefinite contract. There was a period when I worked at 4 schools at the same time to have a full time job. I also worked for two months as a replacement for a math teacher.",
-            mental: "Help with caring for a mentally retarded 52-year-old",
+            mental: "Help with caring for a 52-year-old with an intellectual disability",
             mentalDate: "January 2009 - July 2012",
             tel: "Telephone interviewer, Valicon",
             telDate: "December 2008 - April 2009",
