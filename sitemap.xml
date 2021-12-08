@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/TR/xhtml11/xhtml11_schema.html http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/TR/xhtml11/xhtml11_schema.html">
+  <url>
+    <loc>https://suncica-negra.github.io/personal-web-page</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://suncica-negra.github.io/personal-web-page/en" />
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://suncica-negra.github.io/personal-web-page/o-meni</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://suncica-negra.github.io/personal-web-page/en/o-meni" />
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://suncica-negra.github.io/personal-web-page/projekti</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://suncica-negra.github.io/personal-web-page/en/projekti" />
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://suncica-negra.github.io/personal-web-page/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://suncica-negra.github.io/personal-web-page/en/kontakt" />
+    <priority>1.00</priority>
+  </url>
+</urlset>
