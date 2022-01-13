@@ -130,7 +130,7 @@ export default {
 
   p {
     font-family: "Jura", sans-serif;
-    font-size: 30px;
+    font-size: 51px;
 
     &.intro-more {
       font-size: 23px;
