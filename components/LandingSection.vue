@@ -3,7 +3,7 @@
     <Scrollama
       @step-enter="stepEnterHandler"
       @step-exit="stepExitHandler"
-      :offset="0.3"
+      :offset="0.7"
     >
       <div v-for="(section, index) in sections" :key="index">
         <div class="section transition" :class="section.class">
