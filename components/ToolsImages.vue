@@ -21,6 +21,7 @@ import mongodb from "@/assets/images/mongodb.svg?inline";
 import coffeescript from "@/assets/images/coffeescript.svg?inline";
 import graphql from "@/assets/images/graphql.svg?inline";
 import scss from "@/assets/images/scss.svg?inline";
+import sequelize from "@/assets/images/sequelize.svg?inline";
 
 
 export default {
@@ -47,6 +48,7 @@ export default {
     coffeescript,
     graphql,
     scss,
+    sequelize
   },
 };
 </script>
