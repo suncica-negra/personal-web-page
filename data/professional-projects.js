@@ -4,7 +4,7 @@ export const professionalProjects = [
         imageSrc: "forfend.png",
         imageOrder: "second",
         textOrder: "first",
-        dates: "28.09.2021. - 13.10.2021.",
+        dates: "28.09.2021. - 11.01.2022.",
         images: ["graphql", "react", "css3"],
         casestudy: "",
         web: "http://forfendhealth.com"
@@ -15,7 +15,7 @@ export const professionalProjects = [
         imageOrder: "first",
         textOrder: "second",
         dates: "23.06.2021. - ...",
-        images: ["angular", "mongodb", "nodejs", "express", "javascript", "css3", "html5"],
+        images: ["sequelize", "nuxt", "angular", "mongodb", "nodejs", "express", "javascript", "css3", "html5"],
         casestudy: "",
         web: "https://www.thecollectivechild.com"
     },
@@ -109,5 +109,5 @@ export const professionalProjects = [
         casestudy: "https://kodius.com/case-study/",
         web: "https://www.flexcareers.com.au"
     },
-    
+
 ]
